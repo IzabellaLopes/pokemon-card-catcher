@@ -10,8 +10,8 @@
     --blue: #3466AF;
     --yellow: #FFCB05;
     --black: #333;
-
-
+    --darkgray: #565656;
+    --gray: #aaa;
 }
 
 /* Remove default margins, padding and borders */
@@ -89,4 +89,11 @@
     background-image: url(/assets/images/play-button.webp);
     background-size: cover;
     background-position: center;
+}
+
+.login-button:disabled {
+    filter: grayscale(1);
+    border: 4px solid var(--darkgray);
+    color: var(--gray);
+    cursor: auto;
 }
