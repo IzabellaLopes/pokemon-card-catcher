@@ -23,7 +23,6 @@
 
 /*---------- HOME PAGE ----------*/
 /* Header */
-
 .login-header {
     display: flex;
     align-items: center;
@@ -43,4 +42,13 @@
     margin: 20px;
     padding-top: 20px;
     text-shadow: #FFCB05 3px -2px 3px, #FFCB05 3px -2px 3px, #FFCB05 3px -2px 3px, #FFCB05 3px -2px 3px
+}
+
+/* Outer container */
+#outer-container {
+    background-color: var(--blue);
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1.5rem;
 }
