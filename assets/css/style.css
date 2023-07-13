@@ -24,6 +24,10 @@
     border: none;
 }
 
+body {
+    font-family: var(--content-text);
+}
+
 /*---------- HOME PAGE ----------*/
 /* Header */
 .login-header {
@@ -100,7 +104,37 @@
     cursor: auto;
 }
 
-/*How to play*/
+/* Level of difficulty modal */
+/* Created using the tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I */
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: white;
+    padding: 30px 50px;
+    width: 600px;
+    max-width: 100%;
+    border-radius: 1.5rem;
+}
+
+/* How to play */
 #container {
     max-width: 800px;
     margin: 20px auto;
