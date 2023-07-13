@@ -12,6 +12,8 @@
     --black: #333;
     --darkgray: #565656;
     --gray: #aaa;
+    --aliceblue: #f0f8ff;
+    --darkblue: #1E3B66;
 }
 
 /* Remove default margins, padding and borders */
@@ -96,4 +98,26 @@
     border: 4px solid var(--darkgray);
     color: var(--gray);
     cursor: auto;
+}
+
+/*How to play*/
+#container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--aliceblue);
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#how-to-play {
+    font-family: var(--content-text);
+    font-size: 14pt;
+    text-align: center;
+    color: var(--darkblue);
+}
+
+#how-to-play h2 {
+    text-transform: uppercase;
+    text-shadow: #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px;
 }
