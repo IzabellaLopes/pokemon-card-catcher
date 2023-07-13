@@ -9,6 +9,7 @@
     /*---------- COLOURS ----------*/
     --blue: #3466AF;
     --yellow: #FFCB05;
+    --black: #333;
 
 
 }
@@ -41,7 +42,7 @@
     color: var(--blue);
     margin: 20px;
     padding-top: 20px;
-    text-shadow: #FFCB05 3px -2px 3px, #FFCB05 3px -2px 3px, #FFCB05 3px -2px 3px, #FFCB05 3px -2px 3px
+    text-shadow: #FFCB05 3px -2px 3px, #FFCB05 3px -2px 3px, #FFCB05 3px -2px 3px, #FFCB05 3px -2px 3px;
 }
 
 /* Outer container */
@@ -51,4 +52,41 @@
     margin: auto;
     padding: 1rem;
     border-radius: 1.5rem;
+}
+
+/* Player's name and play button */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-input {
+    font-family: var(--content-text);
+    font-size: 1em;
+    color: var(--black);
+    border: 2px solid var(--black);
+    border-radius: 1.5rem;
+    margin: 20px;
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-button {
+    font-family: var(--content-text);
+    font-size: 24pt;
+    text-transform: uppercase;
+    color: var(--blue);
+    text-shadow: #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px;
+    border: 4px solid var(--yellow);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    padding: 10px 50px 50px;
+    width: 100%;
+    max-width: 400px;
+    height: 150px;
+    background-image: url(/assets/images/play-button.webp);
+    background-size: cover;
+    background-position: center;
 }
