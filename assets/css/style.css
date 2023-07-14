@@ -53,7 +53,7 @@ body {
 }
 
 /* Outer container */
-#outer-container {
+.outer-container {
     background-color: var(--blue);
     width: 80%;
     margin: auto;
