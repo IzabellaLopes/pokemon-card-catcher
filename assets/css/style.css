@@ -14,6 +14,7 @@
     --gray: #aaa;
     --aliceblue: #f0f8ff;
     --darkblue: #1E3B66;
+    --darkred: #64201c;
 }
 
 /* Remove default margins, padding and borders */
@@ -127,11 +128,61 @@ body {
 }
 
 .modal {
-    background-color: white;
-    padding: 30px 50px;
-    width: 600px;
-    max-width: 100%;
+    background-color: var(--yellow);
+    border: 4px solid var(--darkred);
+    width: 400px;
+    max-width: 90%;
+    height: 50%;
+    max-height: 90%;
+    padding: 10px;
     border-radius: 1.5rem;
+    text-align: center;
+}
+
+.modal-header {
+    position: relative;
+    float: right;
+}
+
+#close {
+    background-color: var(--yellow);
+    font-size: inherit;
+}
+
+.modal-body {
+    margin: 50px 10px 0;
+    color: var(--darkblue);
+}
+
+.modal-body h2 {
+    margin-bottom: 20px;
+}
+
+.btn-level {
+    font-family: var(--content-text);
+    font-size: 20pt;
+    text-transform: uppercase;
+    color: var(--blue);
+    text-shadow: #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px;
+    border: 2px solid var(--darkblue);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: 30%;
+    max-height: 100px;
+    margin-top: 10px;
+    background-color: var(--aliceblue);
+}
+
+.btn-level:hover {
+    background-color: var(--darkblue);
+    color: var(--aliceblue);
+    text-shadow: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* How to play */
