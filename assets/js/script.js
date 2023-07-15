@@ -20,7 +20,6 @@ function handleSubmit(event) {
     localStorage.setItem('player', input.value);
 }
 
-
 //Level of difficulty
 //Created using the tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I
 const login_button = document.getElementById('login_button');
@@ -37,15 +36,3 @@ login_button.addEventListener('click', () => {
 close.addEventListener('click', () => {
     modal_container.classList.remove('show');
 });
-
-//Memory card
-//Create an array of the characters 
-const characters = [
-    'bulbasaur',
-    'charizard',
-    'charmander',
-    'dragonite',
-    'mew',
-    'pikachu',
-    'squirtle',
-];
