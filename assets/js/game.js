@@ -1,11 +1,20 @@
 //Memory card
 //Create an array of characters
 const characters = [
+    'arceus',
+    'ash',
     'bulbasaur',
+    'butterfree',
+    'charizard',
     'charmander',
     'dragonite',
+    'eevee',
+    'jigglypuff',
+    'meowth',
     'mew',
+    'mewtwo',
     'pikachu',
+    'piplup',
     'scorbunny',
     'squirtle',
 ];
