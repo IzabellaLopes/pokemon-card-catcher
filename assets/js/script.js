@@ -16,7 +16,7 @@ function validateInput({ target }) {
 
 function handleSubmit(event) {
     event.preventDefault();
-    
+
     localStorage.setItem('player', input.value);
 }
 
@@ -32,8 +32,20 @@ const btn_hard = document.getElementById('btn_hard');
 
 login_button.addEventListener('click', () => {
     modal_container.classList.add('show');
-})
+});
 
 close.addEventListener('click', () => {
     modal_container.classList.remove('show');
 });
+
+//Memory card
+//Create an array of the characters 
+const characters = [
+    'bulbasaur',
+    'charizard',
+    'charmander',
+    'dragonite',
+    'mew',
+    'pikachu',
+    'squirtle',
+];
