@@ -36,11 +36,17 @@ function createMemoryCard(character) {
     return card;
 }
 
+//Duplicate characters
+function duplicateCharacters(charactersArray) {
+    return charactersArray.concat(charactersArray);
+}
+
 // Create the memory game
 function createMemoryGame() {
     const memoryGame = document.querySelector('.memory-game');
 
-    characters.forEach(character => {
+    const duplicatedCharacters = duplicateCharacters(characters);
+    duplicatedCharacters.forEach(character => {
         const card = createMemoryCard(character);
         memoryGame.appendChild(card);
     });
