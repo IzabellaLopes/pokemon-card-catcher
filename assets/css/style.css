@@ -27,6 +27,9 @@
 
 body {
     font-family: var(--content-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*---------- HOME PAGE ----------*/
@@ -55,10 +58,10 @@ body {
 /* Outer container */
 .outer-container {
     background-color: var(--blue);
-    width: 80%;
-    margin: auto;
+    margin: 0 auto 20px;
     padding: 1rem;
     border-radius: 1.5rem;
+    max-width: 800px;
 }
 
 /* Player's name and play button */
@@ -149,6 +152,11 @@ body {
     font-size: inherit;
 }
 
+#close:hover {
+    transform: scale(1.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .modal-body {
     margin: 50px 10px 0;
     color: var(--darkblue);
@@ -193,6 +201,7 @@ body {
     background-color: var(--aliceblue);
     border-radius: 1.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: calc(100vh - 260px);
 }
 
 #how-to-play {
@@ -218,10 +227,11 @@ body {
     margin-top: 20px;
     display: grid;
     gap: 15px;
-    
+
     /* Level hard - Adjust the difficulty level of others */
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-template-rows: repeat(5, 1fr);
+
 }
 
 /* Memory card */
