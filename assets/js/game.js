@@ -41,12 +41,23 @@ function duplicateCharacters(charactersArray) {
     return charactersArray.concat(charactersArray);
 }
 
+// Shuffle array using Fisher-Yates algorithm
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 // Create the memory game
 function createMemoryGame() {
     const memoryGame = document.querySelector('.memory-game');
 
     const duplicatedCharacters = duplicateCharacters(characters);
-    duplicatedCharacters.forEach(character => {
+    const shuffledCharacters = shuffleArray(duplicatedCharacters);
+
+    shuffledCharacters.forEach(character => {
         const card = createMemoryCard(character);
         memoryGame.appendChild(card);
     });
