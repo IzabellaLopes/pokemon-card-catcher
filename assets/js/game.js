@@ -66,16 +66,40 @@ function createMemoryGame() {
 // Call the function to create the memory game
 createMemoryGame();
 
+// Array to store the currently revealed cards
+let revealedCards = [];
+
 // Reveal the card when clicked
 function revealCard(event) {
     const card = event.target.parentElement;
 
-    // Check if the card is already revealed, if yes, do nothing
-    if (card.classList.contains('revealed')) {
+    // Check if the card is already revealed or if there are already two revealed cards
+    if (card.classList.contains('revealed') || revealedCards.length === 2) {
         return;
     }
 
-    card.classList.toggle('revealed');
+    card.classList.add('revealed');
+    revealedCards.push(card);
+
+    // Check if two cards are revealed
+    if (revealedCards.length === 2) {
+        const [card1, card2] = revealedCards;
+        const character1 = card1.querySelector('.front').style.backgroundImage;
+        const character2 = card2.querySelector('.front').style.backgroundImage;
+
+        // Check if the characters are the same
+        if (character1 === character2) {
+            // Cards are the same, keep them revealed
+            revealedCards = [];
+        } else {
+            // Cards are different, wait for 1 second and then hide them again
+            setTimeout(() => {
+                card1.classList.remove('revealed');
+                card2.classList.remove('revealed');
+                revealedCards = [];
+            }, 1000);
+        }
+    }
 }
 
 // Add click event listener to all memory cards
@@ -88,3 +112,4 @@ function addCardClickListeners() {
 
 // Call this function after creating the memory game
 addCardClickListeners();
+
