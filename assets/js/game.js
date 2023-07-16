@@ -78,6 +78,11 @@ function revealCard(event) {
         return;
     }
 
+    // Prevent revealing the same card twice
+    if (revealedCards.includes(card)) {
+        return;
+    }
+
     card.classList.add('revealed');
     revealedCards.push(card);
 
