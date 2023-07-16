@@ -69,6 +69,12 @@ createMemoryGame();
 // Reveal the card when clicked
 function revealCard(event) {
     const card = event.target.parentElement;
+
+    // Check if the card is already revealed, if yes, do nothing
+    if (card.classList.contains('revealed')) {
+        return;
+    }
+
     card.classList.toggle('revealed');
 }
 
