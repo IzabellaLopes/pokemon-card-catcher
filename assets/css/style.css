@@ -244,10 +244,6 @@ body {
     border: 2px solid var(--darkblue);
 }
 
-.memory-card:hover {
-    transform: rotateY(180deg);
-}
-
 .face {
     position: absolute;
     width: 100%;
@@ -266,4 +262,9 @@ body {
     background-position: center;
     background-size: cover;
     backface-visibility: hidden;
+}
+
+/* Additional style for revealed cards */
+.revealed {
+    transform: rotateY(180deg);
 }

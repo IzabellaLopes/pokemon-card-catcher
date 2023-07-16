@@ -65,3 +65,20 @@ function createMemoryGame() {
 
 // Call the function to create the memory game
 createMemoryGame();
+
+// Reveal the card when clicked
+function revealCard(event) {
+    const card = event.target.parentElement;
+    card.classList.toggle('revealed');
+}
+
+// Add click event listener to all memory cards
+function addCardClickListeners() {
+    const memoryCards = document.querySelectorAll('.memory-card');
+    memoryCards.forEach(card => {
+        card.addEventListener('click', revealCard);
+    });
+}
+
+// Call this function after creating the memory game
+addCardClickListeners();
