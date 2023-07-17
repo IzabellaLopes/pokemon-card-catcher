@@ -101,6 +101,11 @@ function revealCard(event) {
             card1.firstChild.classList.add('disabled-card');
             card2.firstChild.classList.add('disabled-card');
             matchedCards.push(card1.firstChild, card2.firstChild);
+
+            if (isGameOver()) {
+                console.log('Congratulations! You have completed the memory game!');
+            }
+
             revealedCards = [];
 
         } else {
@@ -120,6 +125,21 @@ function addCardClickListeners() {
     memoryCards.forEach(card => {
         card.addEventListener('click', revealCard);
     });
+}
+
+// Check if the game is over
+function isGameOver() {
+    // Check if all memory cards have the 'disabled-card' class
+    const memoryCards = document.querySelectorAll('.memory-card');
+    for (const card of memoryCards) {
+        if (!card.querySelector('.front').classList.contains('disabled-card')) {
+            // If any card is not disabled, the game is not over
+            return false;
+        }
+    }
+
+    // If all cards are disabled, the game is over
+    return true;
 }
 
 // Call this function after creating the memory game
