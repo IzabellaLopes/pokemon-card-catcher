@@ -69,6 +69,9 @@ createMemoryGame();
 // Array to store the currently revealed cards
 let revealedCards = [];
 
+// Array to store the matched cards
+let matchedCards = [];
+
 // Reveal the card when clicked
 function revealCard(event) {
     const card = event.target.parentElement;
@@ -94,8 +97,12 @@ function revealCard(event) {
 
         // Check if the characters are the same
         if (character1 === character2) {
-            // Cards are the same, keep them revealed
+            // Cards are the same, keep them revealed and add the "disabled-card" class to the memory-card div
+            card1.firstChild.classList.add('disabled-card');
+            card2.firstChild.classList.add('disabled-card');
+            matchedCards.push(card1.firstChild, card2.firstChild);
             revealedCards = [];
+
         } else {
             // Cards are different, wait for 1 second and then hide them again
             setTimeout(() => {
