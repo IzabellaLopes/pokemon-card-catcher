@@ -242,12 +242,34 @@ header {
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.5);
     color: var(--darkblue);
-    font-size: 14pt;
     width: 100%;
     max-width: 700px;
     padding: 1rem;
     border-radius: 1.5rem;
     margin-bottom: 20px;
+}
+
+.player-info,
+.movements-info,
+.timer-info {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 1.5rem;
+}
+
+/* Additional styles for .player-info */
+.player-info {
+    flex: 2;
+}
+
+/* Additional styles for .movements-info and .timer-info */
+.movements-info,
+.timer-info {
+    flex: 1;
 }
 
 /* Memory grid */
