@@ -235,9 +235,24 @@ header {
     padding: 20px 20px 50px;
 }
 
+/* Game container */
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--darkblue);
+    font-size: 14pt;
+    width: 100%;
+    max-width: 700px;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 20px;
+}
+
 /* Memory grid */
 .memory-game {
-    background-color: var(--yellow);
+    background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
