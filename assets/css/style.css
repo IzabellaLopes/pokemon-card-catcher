@@ -15,6 +15,9 @@
     --aliceblue: #f0f8ff;
     --darkblue: #1E3B66;
     --darkred: #64201c;
+
+    /*---------- HEADER HEIGHT ----------*/
+    --header-height: 120px;
 }
 
 /* Remove default margins, padding and borders */
@@ -27,13 +30,14 @@
 
 body {
     font-family: var(--content-text);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 /*---------- HOME PAGE ----------*/
 /* Header */
+header {
+    height: var(--header-height);
+}
+
 .login-header {
     display: flex;
     align-items: center;
@@ -218,6 +222,20 @@ body {
 
 /*---------- GAME PAGE ----------*/
 /* Memory board */
+.memory-board {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh - var(--header-height));
+    background-image: url(/assets/images/bg.webp);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+/* Memory grid */
 .memory-game {
     background-color: var(--yellow);
     width: 100%;
@@ -225,7 +243,6 @@ body {
     margin: 0 auto;
     padding: 1rem;
     border-radius: 1.5rem;
-    margin-top: 20px;
     display: grid;
     gap: 10px;
 

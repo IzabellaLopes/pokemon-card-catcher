@@ -27,30 +27,32 @@
         </div>
     </header>
 
-    <!-- Game container that holds the player's name, movement count and timer -->
-    <div class="game-container">
-        <!-- Player name -->
-        <div>
-            <span class="player">Player</span>
+    <!-- Memory board that holds the player's details and the memory game -->
+    <div class="memory-board">
+        <!-- Game container that holds the player's name, movement count and timer -->
+        <div class="game-container">
+            <!-- Player name -->
+            <div class="player-info">
+                <span class="player">Player</span>
+            </div>
+            <!-- Player's movement count -->
+            <div class="movements-info">
+                <span class="label">Movements: </span>
+                <span class="movements">0</span>
+            </div>
+            <!-- Timer -->
+            <div class="timer-info">
+                <span class="label">Time: </span>
+                <span class="timer">00:00</span>
+            </div>
         </div>
 
-        <!-- Player's movement count -->
-        <div class="movements-info">
-            <span class="label">Movements:</span>
-            <span class="movements">0</span>
+        <!-- Memory game -->
+        <!-- Outer container that holds the Pokemon memory game -->
+        <div class="memory-game">
+            <!-- Memory cards - dynamically created in JavaScript -->
         </div>
-        
-        <!-- Timer -->
-        <div class="timer-info">
-            <span class="label">Time:</span>
-            <span class="timer">00:00</span>
-        </div>
-    </div>
 
-    <!-- Memory game -->
-    <!-- Outer container that holds the Pokemon memory game -->
-    <div class="memory-game">
-        <!-- Memory cards - created in JavaScript -->
     </div>
 
     <!-- JavaScript link -->
