@@ -142,6 +142,13 @@ function isGameOver() {
     return true;
 }
 
-// Call this function after creating the memory game
-addCardClickListeners();
+// Add player's name introduced on the homepage
+const spanPlayer = document.querySelector('.player');
 
+window.onload = () => {
+
+    spanPlayer.innerHTML = localStorage.getItem('player');
+
+    // Call this function after creating the memory game
+    addCardClickListeners();
+}
