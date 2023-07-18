@@ -306,6 +306,7 @@ header {
     transition: all 400ms ease;
     transform-style: preserve-3d;
     border: 2px solid var(--darkblue);
+    cursor: pointer;
 }
 
 .face {
@@ -331,12 +332,14 @@ header {
 /* Additional style for revealed cards */
 .revealed {
     transform: rotateY(180deg);
+    pointer-events: none;
 }
 
 /* Disabled card */
 .disabled-card {
     filter: saturate(0);
     opacity: 0.5;
+    pointer-events: none;
 }
 
 /* Quit button */

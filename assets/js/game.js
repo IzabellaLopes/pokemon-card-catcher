@@ -30,6 +30,7 @@ function createMemoryCard(character) {
     const frontFace = document.createElement('div');
     frontFace.classList.add('face', 'front');
     frontFace.style.backgroundImage = `url(/assets/images/${character}.webp)`;
+    frontFace.setAttribute('data-character', character); // Add the data attribute
     card.appendChild(frontFace);
 
     const backFace = document.createElement('div');
@@ -100,9 +101,9 @@ function revealCard(event) {
     // Check if two cards are revealed
     if (revealedCards.length === 2) {
         const [card1, card2] = revealedCards;
-        const character1 = card1.querySelector('.front').style.backgroundImage;
-        const character2 = card2.querySelector('.front').style.backgroundImage;
-
+        const character1 = card1.querySelector('.front').getAttribute('data-character'); // Get the data attribute
+        const character2 = card2.querySelector('.front').getAttribute('data-character'); // Get the data attribute
+        
         moves++; // Increment the moves count
         document.getElementById('movements').textContent = moves;
 
@@ -230,4 +231,4 @@ const quitButton = document.getElementById('quit-button');
 quitButton.addEventListener('click', () => {
     // Redirect the user to index.html
     window.location.href = 'index.html';
-})
+});
