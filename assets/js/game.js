@@ -1,4 +1,5 @@
 var timerTimeout;
+let moves = 0;
 
 //Memory card
 //Create an array of characters
@@ -102,6 +103,9 @@ function revealCard(event) {
         const character1 = card1.querySelector('.front').style.backgroundImage;
         const character2 = card2.querySelector('.front').style.backgroundImage;
 
+        moves++; // Increment the moves count
+        document.getElementById('movements').textContent = moves;
+
         // Check if the characters are the same
         if (character1 === character2) {
             // Cards are the same, keep them revealed and add the "disabled-card" class to the memory-card div
@@ -181,8 +185,10 @@ function resetTimer() {
 const spanPlayer = document.querySelector('.player');
 
 window.onload = () => {
-
     spanPlayer.innerHTML = localStorage.getItem('player');
+
+    moves = 0; // Initialize moves count to zero
+    document.getElementById('movements').textContent = moves;
 
     // Call this function after creating the memory game
     addCardClickListeners();

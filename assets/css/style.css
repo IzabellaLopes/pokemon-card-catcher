@@ -15,6 +15,7 @@
     --aliceblue: #f0f8ff;
     --darkblue: #1E3B66;
     --darkred: #64201c;
+    --firebrick: #b22222;
 
     /*---------- HEADER HEIGHT ----------*/
     --header-height: 120px;
@@ -259,6 +260,7 @@ header {
     height: 40px;
     margin-left: 10px;
     border-radius: 1.5rem;
+    font-size: 24px;
 }
 
 /* Additional styles for .player-info */
@@ -270,6 +272,12 @@ header {
 .movements-info,
 .timer-info {
     flex: 1;
+}
+
+/* Movements and Hourglass - Fontawesome icon */
+.movements-info i,
+.timer-info i {
+    color: var(--firebrick);
 }
 
 /* Memory grid */
