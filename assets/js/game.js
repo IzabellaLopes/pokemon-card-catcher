@@ -1,3 +1,5 @@
+var timerTimeout;
+
 //Memory card
 //Create an array of characters
 const characters = [
@@ -89,6 +91,11 @@ function revealCard(event) {
     card.classList.add('revealed');
     revealedCards.push(card);
 
+    // Start the timer if it hasn't started yet
+    if (revealedCards.length === 1) {
+        startTimer();
+    }
+
     // Check if two cards are revealed
     if (revealedCards.length === 2) {
         const [card1, card2] = revealedCards;
@@ -136,10 +143,38 @@ function isGameOver() {
             // If any card is not disabled, the game is not over
             return false;
         }
+
+        // Check if the game is over and stop the timer
+        if (allCardsDisabled) {
+            stopTimer();
+            console.log('Congratulations! You have completed the memory game!');
+
+            // Reset the timer for the next game
+            resetTimer();
+        }
+
+        return allCardsDisabled;
     }
 
     // If all cards are disabled, the game is over
     return true;
+}
+
+// Helper function to check if all cards are disabled
+function areAllCardsDisabled() {
+    const memoryCards = document.querySelectorAll('.memory-card');
+    for (const card of memoryCards) {
+        if (!card.querySelector('.front').classList.contains('disabled-card')) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Reset the timer to 00:00
+function resetTimer() {
+    stopTimer();
+    timer.innerHTML = '00:00';
 }
 
 // Add player's name introduced on the homepage
@@ -151,4 +186,53 @@ window.onload = () => {
 
     // Call this function after creating the memory game
     addCardClickListeners();
+};
+
+// Implement a timer in the game
+// Created using the external source - https://dev.to/gspteck/create-a-stopwatch-in-javascript-2mak
+const timer = document.getElementById('stopwatch');
+
+var min = 0;
+var sec = 0;
+var finalSec;
+var finalMin;
+var stoptime = true;
+
+function startTimer() {
+    if (stoptime == true) {
+        stoptime = false;
+        timerCycle();
+    }
+}
+
+function stopTimer() {
+    if (stoptime == false) {
+        stoptime = true;
+        finalSec = sec;
+        finalMin = min;
+        sec = 0;
+        min = 0;
+    }
+}
+
+function timerCycle() {
+    if (stoptime == false) {
+        sec = parseInt(sec);
+        min = parseInt(min);
+        sec = sec + 1;
+
+        if (sec == 60) {
+            min = min + 1;
+            sec = 0;
+        }
+
+        if (sec < 10 || sec == 0) {
+            sec = "0" + sec;
+        }
+        if (min < 10 || min == 0) {
+            min = "0" + min;
+        }
+        timer.innerHTML = min + ":" + sec;
+        timerTimeout = setTimeout("timerCycle()", 1000);
+    }
 }
