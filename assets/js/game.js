@@ -147,31 +147,12 @@ function isGameOver() {
             // If any card is not disabled, the game is not over
             return false;
         }
-
-        // Check if the game is over and stop the timer
-        if (allCardsDisabled) {
-            stopTimer();
-            console.log('Congratulations! You have completed the memory game!');
-
-            // Reset the timer for the next game
-            resetTimer();
-        }
-
-        return allCardsDisabled;
     }
 
     // If all cards are disabled, the game is over
-    return true;
-}
-
-// Helper function to check if all cards are disabled
-function areAllCardsDisabled() {
-    const memoryCards = document.querySelectorAll('.memory-card');
-    for (const card of memoryCards) {
-        if (!card.querySelector('.front').classList.contains('disabled-card')) {
-            return false;
-        }
-    }
+    stopTimer();
+    // Reset the timer for the next game
+    resetTimer();
     return true;
 }
 
