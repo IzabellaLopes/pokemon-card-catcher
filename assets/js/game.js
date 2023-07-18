@@ -54,17 +54,34 @@ function shuffleArray(array) {
     return array;
 }
 
-// Create the memory game
+// Create the memory game with dynamic grid based on data attributes
 function createMemoryGame() {
     const memoryGame = document.querySelector('.memory-game');
+    const urlParams = new URLSearchParams(window.location.search);
+    const columns = parseInt(urlParams.get('columns'));
+    const rows = parseInt(urlParams.get('rows'));
+    const totalCards = columns * rows;
 
-    const duplicatedCharacters = duplicateCharacters(characters);
+    // Check if columns and rows are valid numbers
+    if (isNaN(columns) || isNaN(rows) || columns <= 0 || rows <= 0) {
+        console.error('Invalid number of columns or rows.');
+        return;
+    }
+
+    // Create an array with the specified number of characters for the memory game
+    const selectedCharacters = characters.slice(0, totalCards / 2);
+    const duplicatedCharacters = duplicateCharacters(selectedCharacters);
     const shuffledCharacters = shuffleArray(duplicatedCharacters);
 
+    // Create memory cards based on the selected characters
     shuffledCharacters.forEach(character => {
         const card = createMemoryCard(character);
         memoryGame.appendChild(card);
     });
+
+    // Dynamically set the grid style based on the number of columns and rows
+    memoryGame.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+    memoryGame.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
 }
 
 // Call the function to create the memory game
@@ -103,7 +120,7 @@ function revealCard(event) {
         const [card1, card2] = revealedCards;
         const character1 = card1.querySelector('.front').getAttribute('data-character'); // Get the data attribute
         const character2 = card2.querySelector('.front').getAttribute('data-character'); // Get the data attribute
-        
+
         moves++; // Increment the moves count
         document.getElementById('movements').textContent = moves;
 
@@ -115,7 +132,7 @@ function revealCard(event) {
             matchedCards.push(card1.firstChild, card2.firstChild);
 
             if (isGameOver()) {
-                console.log('Congratulations! You have completed the memory game!');
+                alert('Congratulations! You have completed the memory game!');
             }
 
             revealedCards = [];
