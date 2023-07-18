@@ -242,3 +242,11 @@ function timerCycle() {
         timerTimeout = setTimeout("timerCycle()", 1000);
     }
 }
+
+// Quit button
+const quitButton = document.getElementById('quit-button');
+
+quitButton.addEventListener('click', () => {
+    // Redirect the user to index.html
+    window.location.href = 'index.html';
+})

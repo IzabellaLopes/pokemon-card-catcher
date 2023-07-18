@@ -338,3 +338,22 @@ header {
     filter: saturate(0);
     opacity: 0.5;
 }
+
+/* Quit button */
+#quit-button {
+    font-family: var(--content-text);
+    font-size: 12pt;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: var(--darkblue);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#quit-button:hover {
+    background-color: var(--darkblue);
+    color: white;
+    cursor: pointer;
+}
