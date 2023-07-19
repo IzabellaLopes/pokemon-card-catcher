@@ -54,6 +54,7 @@ header {
 
 .login-header h1 {
     font-family: var(--header-text);
+    text-align: center;
     font-size: 2.5em;
     letter-spacing: 3px;
     color: var(--blue);
@@ -415,4 +416,56 @@ header {
     font-size: 14pt;
     color: var(--firebrick);
     padding-bottom: 20px;
+}
+
+/* Media queries */
+
+/* Medium devices (landscape tablets, 768px wide and down) */
+@media screen and (max-width: 768px) {}
+
+/* Small devices (portrait tablets and large phones, 600px wide and down) */
+@media screen and (max-width: 600px) {
+    .login-header img {
+        width: 160px;
+    }
+
+    .login-header h1 {
+        font-size: 2em;
+    }
+}
+
+/* Extra small devices (phones, 520px wide and down) */
+@media screen and (max-width: 520px) {
+    .login-header img {
+        width: 140px;
+        margin: 0;
+    }
+
+    .login-header h1 {
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+}
+
+/* Extra small devices (phones, 400px wide and down) */
+@media screen and (max-width: 400px) {
+    .login-header img {
+        width: 130px;
+    }
+
+    .login-header h1 {
+        font-size: 1.1em;
+        padding-top: 0;
+    }
+}
+
+/* Extra small devices (phones, 350px wide and down) */
+@media screen and (max-width: 350px) {
+    .login-header img {
+        width: 120px;
+    }
+
+    .login-header h1 {
+        font-size: 1em;
+    }
 }
