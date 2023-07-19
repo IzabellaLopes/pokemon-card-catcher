@@ -106,6 +106,7 @@ header {
     background-image: url(/assets/images/play-button.webp);
     background-size: cover;
     background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .login-button:disabled {
@@ -113,6 +114,12 @@ header {
     border: 4px solid var(--darkgray);
     color: var(--gray);
     cursor: auto;
+}
+
+.login-button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Level of difficulty modal */
@@ -154,12 +161,12 @@ header {
     float: right;
 }
 
-#close {
+.btn-close {
     background-color: var(--yellow);
     font-size: inherit;
 }
 
-#close:hover {
+.btn-close:hover {
     transform: scale(1.1);
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -371,44 +378,24 @@ header {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     transition: opacity 0.3s ease;
 }
 
 .modal-content {
-    background-color: var(--yellow);
+    background-color: var(--aliceblue);
+    background-image: linear-gradient(to bottom, #FFCB05, rgba(255, 203, 5, 0.8), rgba(255, 203, 5, 0.6), rgba(255, 203, 5, 0.4), rgba(255, 203, 5, 0.2));
     border: 4px solid var(--darkred);
     width: 60%;
-    padding: 20px;
+    padding: 20px 20px 50px;
     margin: 20% auto;
     border-radius: 1.5rem;
     text-align: center;
     color: var(--darkblue);
 }
 
-#play-again {
-    font-family: var(--content-text);
-    font-size: 20pt;
-    text-transform: uppercase;
-    color: var(--blue);
-    text-shadow: #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px;
-    border: 2px solid var(--darkblue);
-    border-radius: 1.5rem;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    max-width: 400px;
-    height: 30%;
-    max-height: 100px;
-    margin-top: 10px;
-    background-color: var(--aliceblue);
-}
-
-#play-again:hover {
-    background-color: var(--darkblue);
-    color: var(--aliceblue);
-    text-shadow: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transform: scale(1.1);
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+.modal-body p {
+    font-size: 14pt;
+    color: var(--firebrick);
+    padding-bottom: 20px;
 }
