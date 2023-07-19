@@ -252,20 +252,6 @@ header {
 }
 
 /*---------- GAME PAGE ----------*/
-/* Memory board */
-.memory-board {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: calc(100vh - var(--header-height) - 20px);
-    background-image: url(/assets/images/bg.webp);
-    background-position: center;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0 26px;
-}
-
 /* Game container */
 .game-container {
     display: flex;
@@ -420,8 +406,12 @@ header {
 
 /* Media queries */
 
-/* Medium devices (landscape tablets, 768px wide and down) */
-@media screen and (max-width: 768px) {}
+/* Medium devices (landscape tablets, 850px wide and down) */
+@media screen and (max-width: 850px) {
+    .outer-container {
+        width: 90%;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px wide and down) */
 @media screen and (max-width: 600px) {
@@ -431,6 +421,10 @@ header {
 
     .login-header h1 {
         font-size: 2em;
+    }
+
+    #how-to-play {
+        font-size: 12pt;
     }
 }
 
@@ -445,6 +439,10 @@ header {
         font-size: 1.5em;
         margin: 0 10px;
     }
+
+    .login-button {
+        font-size: 20pt;
+    }
 }
 
 /* Extra small devices (phones, 400px wide and down) */
@@ -457,6 +455,10 @@ header {
         font-size: 1.1em;
         padding-top: 0;
     }
+
+    .login-button {
+        font-size: 19pt;
+    }
 }
 
 /* Extra small devices (phones, 350px wide and down) */
@@ -467,5 +469,13 @@ header {
 
     .login-header h1 {
         font-size: 1em;
+    }
+
+    .login-button {
+        font-size: 18pt;
+    }
+
+    #how-to-play {
+        font-size: 10pt;
     }
 }
