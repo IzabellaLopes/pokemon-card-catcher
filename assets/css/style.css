@@ -194,6 +194,11 @@ header {
     margin-bottom: 20px;
 }
 
+.modal-body img {
+    width: 25px;
+    height: 25px;
+}
+
 .btn-level {
     font-family: var(--content-text);
     font-size: 20pt;

@@ -25,9 +25,9 @@ function handleSubmit(event) {
 const login_button = document.getElementById('login_button');
 const modal_container = document.getElementById('modal_container');
 const close = document.getElementById('close');
-const btn_easy = document.getElementById('btn_easy');
-const btn_medium = document.getElementById('btn_medium');
-const btn_hard = document.getElementById('btn_hard');
+const btnEasy = document.getElementById('btn_easy');
+const btnMedium = document.getElementById('btn_medium');
+const btnHard = document.getElementById('btn_hard');
 
 login_button.addEventListener('click', () => {
     modal_container.classList.add('show');
@@ -43,16 +43,30 @@ function redirectToGamePage(columns, rows) {
 }
 
 // Easy level
-btn_easy.addEventListener('click', () => {
+btnEasy.addEventListener('click', () => {
     redirectToGamePage(4, 2); // Redirect to the game.html page with a grid of 4 columns and 2 rows
 });
 
 // Medium level
-btn_medium.addEventListener('click', () => {
+btnMedium.addEventListener('click', () => {
     redirectToGamePage(6, 3); // Redirect to the game.html page with a grid of 6 columns and 3 rows
 });
 
 // Hard level
-btn_hard.addEventListener('click', () => {
+btnHard.addEventListener('click', () => {
     redirectToGamePage(8, 4); // Redirect to the game.html page with a grid of 8 columns and 4 rows
 });
+
+// Adding images to buttons based on difficulty level
+function addImagesToButton(button, n) {
+    for (let i = 0; i < n; i++) {
+        const img = document.createElement('img');
+        img.src = '/assets/images/pokeball.webp';
+        img.alt = 'pokeball icon';
+        button.appendChild(img);
+    }
+}
+
+addImagesToButton(btnEasy, 1);
+addImagesToButton(btnMedium, 2);
+addImagesToButton(btnHard, 3);
