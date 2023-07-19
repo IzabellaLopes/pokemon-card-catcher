@@ -319,9 +319,6 @@ header {
     border-radius: 1.5rem;
     display: grid;
     gap: 10px;
-
-    /* Level hard - Adjust the difficulty level of others */
-    grid-template-columns: repeat(8, 1fr);
 }
 
 /* Memory card */
