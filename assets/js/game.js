@@ -247,8 +247,8 @@ function stopTimer() {
         min = 0;
 
         // Format the final time to "mm:ss" and store it in finalTime
-        const formattedMin = finalMin < 10 ? "0" + finalMin : finalMin;
-        const formattedSec = finalSec < 10 ? "0" + finalSec : finalSec;
+        const formattedMin = String(finalMin).padStart(2, '0');
+        const formattedSec = String(finalSec).padStart(2, '0');
         finalTime = formattedMin + ":" + formattedSec;
     }
 }
