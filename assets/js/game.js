@@ -2,6 +2,7 @@ let playerName = localStorage.getItem('player');
 let moves = 0;
 let timerTimeout;
 let finalTime = "00:00";
+let isGameEnded = false;
 
 //Memory card
 //Create an array of characters
@@ -169,9 +170,8 @@ function isGameOver() {
     }
 
     // If all cards are disabled, the game is over
-    stopTimer();
-    // Reset the timer for the next game
-    resetTimer();
+    isGameEnded = true; // Set the flag to indicate game over
+    stopTimer(); // Stop the timer without resetting it
 
     // Results modal
     const resultsModal = document.getElementById('container_results');
@@ -227,8 +227,8 @@ const timer = document.getElementById('stopwatch');
 
 var min = 0;
 var sec = 0;
-var finalSec;
-var finalMin;
+var finalSec = 0;
+var finalMin = 0;
 var stoptime = true;
 
 function startTimer() {
@@ -238,18 +238,23 @@ function startTimer() {
     }
 }
 
+// Stop the timer and update final time
 function stopTimer() {
     if (stoptime == false) {
         stoptime = true;
+        clearTimeout(timerTimeout);
+
+        // Store the current time in finalSec and finalMin
         finalSec = sec;
         finalMin = min;
-        sec = 0;
-        min = 0;
 
         // Format the final time to "mm:ss" and store it in finalTime
         const formattedMin = String(finalMin).padStart(2, '0');
         const formattedSec = String(finalSec).padStart(2, '0');
         finalTime = formattedMin + ":" + formattedSec;
+
+        // Update the timer display with the final time
+        timer.innerHTML = finalTime;
     }
 }
 
