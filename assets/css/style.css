@@ -345,6 +345,7 @@ header {
 
 .front {
     background-color: white;
+    transform: rotateY(180deg);
 }
 
 .back {
