@@ -7,22 +7,22 @@ let isGameEnded = false;
 //Memory card
 //Create an array of characters
 const characters = [
-    'arceus',
     'ash',
-    'bulbasaur',
-    'butterfree',
-    'charizard',
-    'charmander',
-    'dragonite',
-    'eevee',
-    'jigglypuff',
-    'meowth',
+    'bulbasaur-julia',
+    'bulbasaur-thiago',
+    'charizard-julia',
+    'charizard-thiago',
+    'charmander-julia',
+    'charmander-thiago',
+    'jigglypuff-thiago',
     'mew',
     'mewtwo',
-    'pikachu',
+    'oshawott',
+    'pikachu-julia',
+    'pikachu-thiago',
     'piplup',
-    'scorbunny',
-    'squirtle',
+    'squirtle-julia',
+    'wigglypuff-thiago',
 ];
 
 // Create a card
