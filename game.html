@@ -53,6 +53,24 @@
 
         <!-- Quit button -->
         <button id="quit-button">Quit</button>
+
+        <!-- Results modal -->
+        <div class="container-results" id="container_results">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" id="close-results"><i class="fa-solid fa-circle-xmark fa-2xl"
+                            style="color: #64201c;"></i></button>
+                </div>
+                <div class="results-body">
+                    <h2>Congratulations, <span id="modal-player-name"></span>! You are a good card catcher!</h2>
+                    <p>Your number of moves was <span id="modal-movements"></span> and your time was <span
+                            id="modal-time"></span>.</p>
+                    <button id="play-again">Play again</button>
+                </div>
+
+
+            </div>
+        </div>
     </div>
 
     <!-- JavaScript link -->

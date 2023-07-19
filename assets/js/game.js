@@ -1,5 +1,6 @@
-var timerTimeout;
+let playerName = localStorage.getItem('player');
 let moves = 0;
+let timerTimeout;
 
 //Memory card
 //Create an array of characters
@@ -132,7 +133,6 @@ function revealCard(event) {
             matchedCards.push(card1.firstChild, card2.firstChild);
 
             if (isGameOver()) {
-                alert('Congratulations! You have completed the memory game!');
             }
 
             revealedCards = [];
@@ -171,6 +171,19 @@ function isGameOver() {
     stopTimer();
     // Reset the timer for the next game
     resetTimer();
+
+    // Results modal
+    const resultsModal = document.getElementById('container_results');
+    const modalPlayerName = document.getElementById('modal-player-name');
+    const modalMovements = document.getElementById('modal-movements');
+    const modalTime = document.getElementById('modal-time');
+
+    modalPlayerName.textContent = playerName;
+    modalMovements.textContent = moves;
+    modalTime.textContent = timer.innerHTML;
+
+    resultsModal.style.display = 'block';
+
     return true;
 }
 
@@ -184,13 +197,27 @@ function resetTimer() {
 const spanPlayer = document.querySelector('.player');
 
 window.onload = () => {
-    spanPlayer.innerHTML = localStorage.getItem('player');
+    spanPlayer.innerHTML = playerName;
 
     moves = 0; // Initialize moves count to zero
     document.getElementById('movements').textContent = moves;
 
     // Call this function after creating the memory game
     addCardClickListeners();
+
+    // Play again results modal
+    const resultsModal = document.getElementById('container_results');
+    const closeResults = document.getElementById('close-results');
+    const playAgain = document.getElementById('play-again');
+
+    closeResults.addEventListener('click', function () {
+        resultsModal.style.display = 'none';
+    });
+
+    playAgain.addEventListener('click', () => {
+        // Redirect the user to index.html
+        window.location.href = 'index.html';
+    });
 };
 
 // Implement a timer in the game
