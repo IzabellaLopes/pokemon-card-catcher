@@ -62,9 +62,23 @@ header {
     text-shadow: #FFCB05 3px -2px 3px, #FFCB05 3px -2px 3px, #FFCB05 3px -2px 3px, #FFCB05 3px -2px 3px;
 }
 
+/* Memory board - index.html and game.html */
+.memory-board {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh - var(--header-height) - 20px);
+    background-image: url(/assets/images/bg.webp);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 26px;
+}
+
 /* Outer container */
 .outer-container {
-    background-color: var(--blue);
+    background-color: rgba(255, 255, 255, 0.5);
     margin: 0 auto 20px;
     padding: 1rem;
     border-radius: 1.5rem;
@@ -236,13 +250,13 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header-height) - 20px);
     background-image: url(/assets/images/bg.webp);
     background-position: center;
     background-size: cover;
     align-items: center;
     justify-content: center;
-    padding: 20px 20px 50px;
+    padding: 20px 0 26px;
 }
 
 /* Game container */
