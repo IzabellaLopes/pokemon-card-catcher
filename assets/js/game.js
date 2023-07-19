@@ -1,6 +1,7 @@
 let playerName = localStorage.getItem('player');
 let moves = 0;
 let timerTimeout;
+let finalTime = "00:00";
 
 //Memory card
 //Create an array of characters
@@ -180,7 +181,7 @@ function isGameOver() {
 
     modalPlayerName.textContent = playerName;
     modalMovements.textContent = moves;
-    modalTime.textContent = timer.innerHTML;
+    modalTime.textContent = finalTime; // Add the finalTime
 
     resultsModal.style.display = 'block';
 
@@ -244,6 +245,11 @@ function stopTimer() {
         finalMin = min;
         sec = 0;
         min = 0;
+
+        // Format the final time to "mm:ss" and store it in finalTime
+        const formattedMin = finalMin < 10 ? "0" + finalMin : finalMin;
+        const formattedSec = finalSec < 10 ? "0" + finalSec : finalSec;
+        finalTime = formattedMin + ":" + formattedSec;
     }
 }
 
