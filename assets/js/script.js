@@ -23,18 +23,18 @@ function handleSubmit(event) {
 // Level of difficulty
 // Created using the tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I
 const login_button = document.getElementById('login_button');
-const modal_container = document.getElementById('modal_container');
+const levelContainer = document.getElementById('level_container');
 const close = document.getElementById('close');
 const btnEasy = document.getElementById('btn_easy');
 const btnMedium = document.getElementById('btn_medium');
 const btnHard = document.getElementById('btn_hard');
 
 login_button.addEventListener('click', () => {
-    modal_container.classList.add('show');
+    levelContainer.classList.add('show');
 });
 
 close.addEventListener('click', () => {
-    modal_container.classList.remove('show');
+    levelContainer.classList.remove('show');
 });
 
 function redirectToGamePage(columns, rows) {

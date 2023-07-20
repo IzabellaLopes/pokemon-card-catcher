@@ -157,14 +157,23 @@ header {
 
 /* Level of difficulty modal */
 /* Created using the tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I */
-.modal-container {
-    background-color: rgba(0, 0, 0, 0.3);
+.level-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
     opacity: 0;
     pointer-events: none;
+}
+
+.level-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/* Modal container style to both level of difficulty modal and results modal */
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -172,18 +181,15 @@ header {
     transition: opacity 0.3s ease;
 }
 
-.modal-container.show {
-    pointer-events: auto;
-    opacity: 1;
-}
-
+/* Modal content style to both level of difficulty modal and results modal */
 .modal-style {
     background-color: var(--aliceblue);
     background-image: linear-gradient(to bottom, #FFCB05, rgba(255, 203, 5, 0.8), rgba(255, 203, 5, 0.6), rgba(255, 203, 5, 0.4), rgba(255, 203, 5, 0.2));
     border: 4px solid var(--darkred);
     text-align: center;
-    padding: 20px 20px 50px;
+    padding: 30px 20px 50px;
     color: var(--darkblue);
+    border-radius: 1.5rem;
 }
 
 .modal {
@@ -230,6 +236,9 @@ header {
     max-width: 400px;
     margin-top: 10px;
     background-color: var(--aliceblue);
+    text-transform: uppercase;
+    text-shadow: #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px;
+    border-radius: 1.5rem;
 }
 
 .btn-level:hover {
@@ -391,7 +400,7 @@ header {
 }
 
 .modal-content {
-    width: 60%;
+    width: 80%;
     margin: 20% auto;
 }
 
@@ -399,6 +408,14 @@ header {
     font-size: 14pt;
     color: var(--firebrick);
     padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+#modal-movements,
+#modal-time {
+    color: var(--darkblue);
+    border: 2px solid var(--blue);
+    padding: 5px;
 }
 
 /* Media queries */
@@ -426,120 +443,150 @@ header {
     #quit-button {
         padding: 0.7rem;
     }
-}
 
-/* Small devices (portrait tablets and large phones, 600px wide and down) */
-@media screen and (max-width: 600px) {
-    .login-header img {
-        width: 160px;
+    .modal-content {
+        width: 90%;
     }
 
-    .login-header h1 {
-        font-size: 2em;
+    .modal-body {
+        margin: 40px 0 0;
     }
 
-    #how-to-play {
-        font-size: 12pt;
-    }
-
-    .player-info,
-    .movements-info,
-    .timer-info {
-        font-size: 14pt;
-    }
-
-    .game-container,
-    .memory-game,
-    #quit-button {
-        padding: 0.5rem;
-    }
-
-    .memory-game {
-        gap: 2px;
-    }
-}
-
-/* Extra small devices (phones, 520px wide and down) */
-@media screen and (max-width: 520px) {
-    .login-header img {
-        width: 140px;
-        margin: 0;
-    }
-
-    .login-header h1 {
-        font-size: 1.5em;
-        margin: 0 10px;
-    }
-
-    .login-button {
-        font-size: 20pt;
-    }
-
-    .player-info,
-    .movements-info,
-    .timer-info {
+    .modal-body p {
         font-size: 12pt;
     }
 }
 
-/* Extra small devices (phones, 400px wide and down) */
-@media screen and (max-width: 400px) {
-    .login-header img {
-        width: 130px;
+    /* Small devices (portrait tablets and large phones, 600px wide and down) */
+    @media screen and (max-width: 600px) {
+        .login-header img {
+            width: 160px;
+        }
+
+        .login-header h1 {
+            font-size: 2em;
+        }
+
+        #how-to-play {
+            font-size: 12pt;
+        }
+
+        .player-info,
+        .movements-info,
+        .timer-info {
+            font-size: 14pt;
+        }
+
+        .game-container,
+        .memory-game,
+        #quit-button {
+            padding: 0.5rem;
+        }
+
+        .memory-game {
+            gap: 2px;
+        }
+
+        .modal-body h2 {
+            font-size: 16pt;
+        }
+
+        #modal-movements,
+        #modal-time {
+            padding: 0;
+        }
     }
 
-    .login-header h1 {
-        font-size: 1.1em;
-        padding-top: 0;
+    /* Extra small devices (phones, 520px wide and down) */
+    @media screen and (max-width: 520px) {
+        .login-header img {
+            width: 140px;
+            margin: 0;
+        }
+
+        .login-header h1 {
+            font-size: 1.5em;
+            margin: 0 10px;
+        }
+
+        .login-button {
+            font-size: 20pt;
+        }
+
+        .player-info,
+        .movements-info,
+        .timer-info {
+            font-size: 12pt;
+        }
+
+        .modal-body h2 {
+            font-size: 14pt;
+        }
     }
 
-    .login-button {
-        font-size: 19pt;
+    /* Extra small devices (phones, 400px wide and down) */
+    @media screen and (max-width: 400px) {
+        .login-header img {
+            width: 130px;
+        }
+
+        .login-header h1 {
+            font-size: 1.1em;
+            padding-top: 0;
+        }
+
+        .login-button {
+            font-size: 19pt;
+        }
+
+        .modal-body h2 {
+            font-size: 16pt;
+        }
+
+        .btn-level {
+            font-size: 18pt;
+
+        }
+
+        .modal-body img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .modal-content {
+            padding-bottom: 10px;
+        }
     }
 
-    .modal-body h2 {
-        font-size: 16pt;
-    }
+    /* Extra small devices (phones, 350px wide and down) */
+    @media screen and (max-width: 350px) {
+        .login-header img {
+            width: 120px;
+        }
 
-    .btn-level {
-        font-size: 18pt;
-    }
+        .login-header h1 {
+            font-size: 1em;
+        }
 
-    .modal-body img {
-        width: 20px;
-        height: 20px;
-    }
-}
+        .login-button {
+            font-size: 18pt;
+        }
 
-/* Extra small devices (phones, 350px wide and down) */
-@media screen and (max-width: 350px) {
-    .login-header img {
-        width: 120px;
-    }
+        #how-to-play {
+            font-size: 10pt;
+        }
 
-    .login-header h1 {
-        font-size: 1em;
-    }
+        .modal-body h2 {
+            font-size: 14pt;
+        }
 
-    .login-button {
-        font-size: 18pt;
-    }
+        .btn-level {
+            font-size: 16pt;
+        }
 
-    #how-to-play {
-        font-size: 10pt;
+        .player-info,
+        .movements-info,
+        .timer-info {
+            font-size: 10pt;
+        }
     }
-
-    .modal-body h2 {
-        font-size: 14pt;
-    }
-
-    .btn-level {
-        font-size: 16pt;
-    }
-
-    .player-info,
-    .movements-info,
-    .timer-info {
-        font-size: 10pt;
-    }
-}
