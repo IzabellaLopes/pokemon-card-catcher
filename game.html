@@ -35,29 +35,29 @@
     <!-- Memory board that holds the player's details and the memory game -->
     <div class="memory-board">
         <!-- Game container that holds the player's name, movement count and timer -->
-        <div class="game-container">
+        <div class="game-container rounded">
             <!-- Player name -->
-            <div class="player-info">
+            <div class="player-info rounded">
                 <span class="player"></span>
             </div>
             <!-- Player's movement count -->
-            <div class="movements-info">
+            <div class="movements-info rounded">
                 <i class="fa-solid fa-gamepad"></i><span id="movements">0</span>
             </div>
             <!-- Timer -->
-            <div class="timer-info">
+            <div class="timer-info rounded">
                 <i class="fa-regular fa-hourglass-half"></i><span id="stopwatch">00:00</span>
             </div>
         </div>
 
         <!-- Memory game -->
         <!-- Outer container that holds the Pokemon memory game -->
-        <div class="memory-game">
+        <div class="memory-game rounded">
             <!-- Memory cards - dynamically created in JavaScript -->
         </div>
 
         <!-- Quit button -->
-        <button id="quit-button">Quit</button>
+        <button id="quit-button" class="rounded">Quit</button>
 
         <!-- Results modal -->
         <div class="container-results" id="container_results">

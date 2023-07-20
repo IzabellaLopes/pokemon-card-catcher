@@ -33,6 +33,11 @@ body {
     font-family: var(--content-text);
 }
 
+/* Border radius */
+.rounded {
+    border-radius: 1.5rem;
+}
+
 /*---------- HOME PAGE ----------*/
 /* Header */
 header {
@@ -82,7 +87,6 @@ header {
     background-color: rgba(255, 255, 255, 0.5);
     margin: 0 auto 20px;
     padding: 1rem;
-    border-radius: 1.5rem;
     max-width: 800px;
 }
 
@@ -98,7 +102,6 @@ header {
     font-size: 1em;
     color: var(--black);
     border: 2px solid var(--black);
-    border-radius: 1.5rem;
     margin: 20px;
     padding: 15px;
     width: 100%;
@@ -116,7 +119,6 @@ header {
     color: var(--blue);
     text-shadow: #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px;
     border: 4px solid var(--yellow);
-    border-radius: 1.5rem;
     cursor: pointer;
     padding: 10px 50px 50px;
     width: 100%;
@@ -171,7 +173,6 @@ header {
     background-color: var(--aliceblue);
     background-image: linear-gradient(to bottom, #FFCB05, rgba(255, 203, 5, 0.8), rgba(255, 203, 5, 0.6), rgba(255, 203, 5, 0.4), rgba(255, 203, 5, 0.2));
     border: 4px solid var(--darkred);
-    border-radius: 1.5rem;
     text-align: center;
     padding: 20px 20px 50px;
     color: var(--darkblue);
@@ -217,7 +218,6 @@ header {
     color: var(--blue);
     text-shadow: #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px, #FFCB05 2px -1px 2px;
     border: 2px solid var(--darkblue);
-    border-radius: 1.5rem;
     cursor: pointer;
     padding: 10px;
     width: 100%;
@@ -241,7 +241,6 @@ header {
     margin: 20px auto;
     padding: 20px;
     background-color: var(--aliceblue);
-    border-radius: 1.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
     max-height: calc(100vh - 260px);
 }
@@ -270,7 +269,6 @@ header {
     width: 100%;
     max-width: 700px;
     padding: 1rem;
-    border-radius: 1.5rem;
     margin-bottom: 20px;
 }
 
@@ -283,7 +281,6 @@ header {
     align-items: center;
     height: 40px;
     margin-left: 10px;
-    border-radius: 1.5rem;
     font-size: 24px;
 }
 
@@ -311,7 +308,6 @@ header {
     max-width: 700px;
     margin: 0 auto;
     padding: 1rem;
-    border-radius: 1.5rem;
     display: grid;
     gap: 10px;
 }
@@ -369,7 +365,6 @@ header {
     background-color: rgba(255, 255, 255, 0.6);
     color: var(--darkblue);
     padding: 1rem;
-    border-radius: 1.5rem;
     margin-top: 10px;
     transition: background-color 0.3s;
 }

@@ -34,18 +34,18 @@
 
     <!-- Outer container that holds the player's name, play button, and how to play elements -->
     <div class="memory-board">
-        <div class="outer-container">
+        <div class="outer-container rounded">
             <!-- Form to insert player's name -->
             <form class="login-form">
-                <input type="text" placeholder="Name" class="login-input">
+                <input type="text" placeholder="Name" class="login-input rounded">
 
                 <!-- Play button -->
-                <button type="submit" id="login_button" class="login-button" disabled>Catch 'em all!</button>
+                <button type="submit" id="login_button" class="login-button rounded" disabled>Catch 'em all!</button>
             </form>
 
             <!-- Level of difficulty modal -->
             <div class="modal-container" id="modal_container">
-                <div class="modal modal-style">
+                <div class="modal modal-style rounded">
                     <div class="modal-header">
                         <button type="button" class="btn-close" id="close"><i class="fa-solid fa-circle-xmark fa-2xl"
                                 style="color: #64201c;"></i></button>
@@ -53,16 +53,16 @@
                     <div class="modal-body">
                         <h2>Choose your level of difficulty:</h2>
                         <div>
-                            <button type="button" id="btn_easy" class="btn-level">Easy  </button>
-                            <button type="button" id="btn_medium" class="btn-level">Medium  </button>
-                            <button type="button" id="btn_hard" class="btn-level">Hard  </button>
+                            <button type="button" id="btn_easy" class="btn-level rounded">Easy  </button>
+                            <button type="button" id="btn_medium" class="btn-level rounded">Medium  </button>
+                            <button type="button" id="btn_hard" class="btn-level rounded">Hard  </button>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- How to play container -->
-            <div id="container">
+            <div id="container" class="rounded">
                 <div id="how-to-play">
                     <h2>How to Play</h2>
                     <br>
