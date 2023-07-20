@@ -363,7 +363,6 @@ header {
 #quit-button {
     font-family: var(--content-text);
     font-size: 12pt;
-    align-items: center;
     background-color: rgba(255, 255, 255, 0.6);
     color: var(--darkblue);
     padding: 1rem;
@@ -423,6 +422,10 @@ header {
     .memory-game {
         gap: 5px;
     }
+
+    #quit-button {
+        padding: 0.7rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px wide and down) */
@@ -446,7 +449,8 @@ header {
     }
 
     .game-container,
-    .memory-game {
+    .memory-game,
+    #quit-button {
         padding: 0.5rem;
     }
 
