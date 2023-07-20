@@ -411,6 +411,14 @@ header {
     }
 }
 
+/* Medium devices (tablets, 768px wide and down) */
+@media screen and (max-width: 768px) {
+    .game-container {
+        width: 90%;
+        padding: 0.7rem;
+    }
+}
+
 /* Small devices (portrait tablets and large phones, 600px wide and down) */
 @media screen and (max-width: 600px) {
     .login-header img {
@@ -423,6 +431,12 @@ header {
 
     #how-to-play {
         font-size: 12pt;
+    }
+
+    .player-info,
+    .movements-info,
+    .timer-info {
+        font-size: 14pt;
     }
 }
 
@@ -440,6 +454,12 @@ header {
 
     .login-button {
         font-size: 20pt;
+    }
+
+    .player-info,
+    .movements-info,
+    .timer-info {
+        font-size: 12pt;
     }
 }
 
@@ -496,5 +516,11 @@ header {
 
     .btn-level {
         font-size: 16pt;
+    }
+
+    .player-info,
+    .movements-info,
+    .timer-info {
+        font-size: 10pt;
     }
 }
