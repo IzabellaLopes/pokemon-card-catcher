@@ -49,12 +49,18 @@ btnEasy.addEventListener('click', () => {
 
 // Medium level
 btnMedium.addEventListener('click', () => {
-    redirectToGamePage(6, 3); // Redirect to the game.html page with a grid of 6 columns and 3 rows
+    const isSmallDevice = window.matchMedia("(max-width: 600px)").matches;
+    const columns = isSmallDevice ? 4 : 6; // If it's a small device, use 4 columns, otherwise use 6 columns
+    const rows = isSmallDevice ? 4 : 3; // If it's a small device, use 4 rows, otherwise use 3 rows
+    redirectToGamePage(columns, rows); // Redirect to the game.html page with the selected number of columns and rows
 });
 
 // Hard level
 btnHard.addEventListener('click', () => {
-    redirectToGamePage(8, 4); // Redirect to the game.html page with a grid of 8 columns and 4 rows
+    const isSmallDevice = window.matchMedia("(max-width: 600px)").matches;
+    const columns = isSmallDevice ? 5 : 8; // If it's a small device, use 5 columns, otherwise use 8 columns
+    const rows = isSmallDevice ? 6 : 4; // If it's a small device, use 6 rows, otherwise use 4 rows
+    redirectToGamePage(columns, rows); // Redirect to the game.html page with the selected number of columns and rows
 });
 
 // Adding images to buttons based on difficulty level
