@@ -100,6 +100,9 @@ let matchedCards = [];
 function revealCard(event) {
     const card = event.target.parentElement;
 
+
+    console.log("^clicked, ====>", card);
+
     // Check if the card is already revealed or if there are already two revealed cards
     if (card.classList.contains('revealed') || revealedCards.length === 2) {
         return;
@@ -150,8 +153,12 @@ function revealCard(event) {
     }
 }
 
+console.log("^clicked, ====>");
+
 // Add click event listener to all memory cards
 function addCardClickListeners() {
+
+    console.log("^clicked, ====>");
     const memoryCards = document.querySelectorAll('.memory-card');
     memoryCards.forEach(card => {
         card.addEventListener('click', revealCard);

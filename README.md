@@ -115,13 +115,13 @@ Google Fonts was used for the following fonts:
 - [Fredoka](https://fonts.google.com/specimen/Fredoka?preview.text=P%C3%B3kemon%20Card%20Catcher&preview.text_type=custom&query=fredoka) for Body:
   - Sans-serif font
   - Clean and elegant design, that provides pleasant reading experience
-  - Friendly and rounded letterforms complement the playful nature of the game, creating a visually appealng and enjoyable experience for the players
+  - Friendly and rounded letterforms complement the playful nature of the game, creating a visually appealing and enjoyable experience for the players
 
 ![Fredoka Font Example](documentation/fredoka.png)
 
 ### Imagery
 
-The images were sourced from free downloads from PNGEGG, PNGWING, WALLPAPER SAFARI, IMGUR, FLATICON, as well as personally handcrafted by my talented children, Thiago Carvalho, 7 years old, and Júlia Carvalho, 6 years old. To honor the sources of these remarkable images, proper credits have been given in the dedicated [credits](#Credits) section.
+The images were sourced from free downloads from PngEgg, PngWing, Wallpaper Safari, Imgur, Flaticon, as well as personally handcrafted by my talented children, Thiago Carvalho, 7 years old, and Júlia Carvalho, 6 years old. To honor the sources of these remarkable images, proper credits have been given in the dedicated [credits](#Credits) section.
 
 ### Features
 
@@ -272,14 +272,15 @@ Additionally, I inspected each page using Google Chrome Developer Tools to ensur
 
 Header:
 
-- Pókemon logo
-  - [logo](https://www.pngegg.com/en/png-wpzwe) - Credit to PNG EGG.
+- [logo](https://www.pngegg.com/en/png-wpzwe) - Credit to PNG EGG.
 
 Background:
 
 - [bg](https://imgur.com/C90jsi5) - Credit to Imgur.
 
-Play button - [play-button](https://wallpapersafari.com/w/CGzOkf) - Credit to wallpaper safari.
+Play button:
+
+- [play-button](https://wallpapersafari.com/w/CGzOkf) - Credit to wallpaper safari.
 
 Pokemon icon:
 
@@ -287,27 +288,26 @@ Pokemon icon:
 
 Backface of memory cards:
 
-- Pokeball
-  - [back](https://www.pngegg.com/en/png-wgjie) - Credit to PNG EGG.
+- [back](https://www.pngegg.com/en/png-wgjie) - Credit to PNG EGG.
 
 Frontface of memory cards:
 
 - [ash](https://www.pngegg.com/en/png-bxlxe) - Credit to PNG EGG.
-- bulbasaur-julia - Drawn by my daughter Júlia, 6 years old.
-- bulbasaur-thiago - Drawn by my son Thiago, 7 years old.
-- charizard-julia - Drawn by my daughter Júlia, 6 years old.
-- charizard-thiago - Drawn by my son Thiago, 7 years old.
-- charmander-julia - Drawn by my daughter Júlia, 6 years old.
-- charmander-thiago - Drawn by my son Thiago, 7 years old.
-- jigglypuff-thiago - Drawn by my son Thiago, 7 years old.
+- [bulbasaur-julia](assets/images/bulbasaur-julia.webp) - Drawn by my daughter Júlia, 6 years old.
+- [bulbasaur-thiago](assets/images/bulbasaur-thiago.webp) - Drawn by my son Thiago, 7 years old.
+- [charizard-julia](assets/images/charizard-julia.webp) - Drawn by my daughter Júlia, 6 years old.
+- [charizard-thiago](assets/images/charizard-thiago.webp) - Drawn by my son Thiago, 7 years old.
+- [charmander-julia](assets/images/charmander-julia.webp) - Drawn by my daughter Júlia, 6 years old.
+- [charmander-thiago](assets/images/charmander-thiago.webp) - Drawn by my son Thiago, 7 years old.
+- [jigglypuff-thiago](assets/images/jigglypuff-thiago.webp) - Drawn by my son Thiago, 7 years old.
 - [mew](https://www.pngegg.com/en/png-itrnm) - Credit to PNG EGG.
 - [mewtwo](https://www.pngegg.com/en/png-icqhb) - Credit to PNG EGG.
 - [oshawott](https://www.pngwing.com/en/free-png-pzfgn) - Credit to PNGWING.
-- pikachu-julia - Drawn by my daughter Júlia, 6 years old.
-- pikachu-thiago - Drawn by my son Thiago, 7 years old.
+- [pikachu-julia](assets/images/pikachu-julia.webp) - Drawn by my daughter Júlia, 6 years old.
+- [pikachu-thiago](assets/images/pikachu-thiago.webp) - Drawn by my son Thiago, 7 years old.
 - [piplup](https://www.pngegg.com/en/png-bbrqm) - Credit to PNG EGG.
-- squirtle-julia - Drawn by my daughter Júlia, 6 years old.
-- wigglypuff-thiago - Drawn by my son Thiago, 7 years old.
+- [squirtle-julia](assets/images/squirtle-julia.webp) - Drawn by my daughter Júlia, 6 years old.
+- [wigglypuff-thiago](assets/images/wigglypuff-thiago.webp) - Drawn by my son Thiago, 7 years old.
 
 ### Acknowledgments
 
