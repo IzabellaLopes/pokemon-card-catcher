@@ -6,7 +6,13 @@ Visit the deployed site: [Pókemon Card Catcher](https://izabellalopes.github.io
 
 Welcome to Pokémon Card Catcher, the ultimate memory card game that will put your memory skills to the test! Whether you're a seasoned Pokémon fan or just looking for a fun and challenging game, this is the perfect choice for you.
 
-Your primary objective in Pokémon Card Catcher is to find the matching pairs of Pokémon cards as quickly as possible. The game board consists of a grid of facedown cards, and your task is to flip them over, two at a time, trying to reveal cards with identical Pokémon. As you uncover the cards, try to remember their positions so you can make successful matches.
+Pokémon Card Catcher was developed for players of all ages who enjoy testing their memory and concentration abilities while immersed in the colorful world of Pokémon. The game's concept is simple but addictive: find matching pairs of Pokémon cards as quickly as possible.
+
+The game board features a grid of facedown cards, and your task is to flip them over two at a time, aiming to reveal cards with identical Pokémon. As you uncover the cards, try to remember their positions to make successful matches.
+
+One unique aspect of Pokémon Card Catcher is that the captivating images of the Pokémon were drawn by my talented children. Their artwork adds a personal touch to the game, making it even more special and enjoyable for players of all ages.
+
+Embark on this delightful Pokémon memory adventure and see if you have what it takes to catch 'em all in Pokémon Card Catcher!
 
 ## CONTENTS
 
