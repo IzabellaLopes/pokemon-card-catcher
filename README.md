@@ -1,6 +1,6 @@
 # Pokémon Card Catcher - Memory Card Game
 
-![Pókemon Card Catcher Website shown on a range of devices](include image)
+![Pókemon Card Catcher Website shown on a range of devices](documentation/responsive.png)
 
 Visit the deployed site: [Pókemon Card Catcher](https://izabellalopes.github.io/pokemon-card-catcher/)
 
