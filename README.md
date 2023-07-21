@@ -81,9 +81,19 @@ Embark on this delightful Pokémon memory adventure and see if you have what it 
 
 ### Color Scheme
 
+The color palette for the creation of the memory game "Pokémon Card Catcher" was carefully chosen to enhance the overall gaming experience and evoke a sense of nostalgia and excitement. 
 
+In my CSS file, I employed variables to define colors and consistently applied them across the entire stylesheet. It enables easy color updates throughout the website by modifying the color once in the variable, maintaining consistency across the design.
 
-![Palette](documentation/colorpalette.png)
+The following color codes were selected:
+
+* Blue (#3466AF) and Yellow (#FFCB05) for Card Catcher header to match the Pokémon logo.
+
+* As the site features a Pokémon landscape background image, I included a calming and soothing hue of Aliceblue (#F0F8FF) for a visually appealing backdrop, reducing eye strain during extended play. For the foreground color, I opted for a darker blue (#1E3B66) that provides excellent contrast, confirmed through the WebAIM Contrast Checker.
+
+* Additionally, for icons and certain details, I selected shades of red, Firebrick (#B22222) and Dark Red (#64201C), reminiscent of the Pokéball, adding an element of excitement and intensity to the game.
+
+![Pókemon Card Catcher Palette](documentation/colorpalette.png)
 
 The color palette was created using the [Coolors](https://coolors.co/) website.
 
