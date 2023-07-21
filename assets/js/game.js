@@ -32,7 +32,7 @@ function createMemoryCard(character) {
 
     const frontFace = document.createElement('div');
     frontFace.classList.add('face', 'front');
-    frontFace.style.backgroundImage = `url(/assets/images/${character}.webp)`;
+    frontFace.style.backgroundImage = `url(assets/images/${character}.webp)`;
     frontFace.setAttribute('data-character', character); // Add the data attribute
     card.appendChild(frontFace);
 

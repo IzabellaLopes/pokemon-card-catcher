@@ -67,7 +67,7 @@ btnHard.addEventListener('click', () => {
 function addImagesToButton(button, n) {
     for (let i = 0; i < n; i++) {
         const img = document.createElement('img');
-        img.src = '/assets/images/pokeball.webp';
+        img.src = 'assets/images/pokeball.webp';
         img.alt = 'pokeball icon';
         button.appendChild(img);
     }

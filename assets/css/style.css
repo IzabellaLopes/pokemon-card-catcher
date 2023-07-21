@@ -84,7 +84,7 @@ header {
     flex-direction: column;
     width: 100%;
     min-height: calc(100vh - var(--header-height) - 20px);
-    background-image: url(/assets/images/bg.webp);
+    background-image: url(../images/bg.webp);
     background-position: center;
     background-size: cover;
     align-items: center;
@@ -132,7 +132,7 @@ header {
     width: 100%;
     max-width: 400px;
     height: 150px;
-    background-image: url(/assets/images/play-button.webp);
+    background-image: url(../images/play-button.webp);
     background-size: cover;
     background-position: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -349,7 +349,7 @@ header {
 }
 
 .back {
-    background-image: url(/assets/images/back.webp);
+    background-image: url(../images/back.webp);
     backface-visibility: hidden;
 }
 
