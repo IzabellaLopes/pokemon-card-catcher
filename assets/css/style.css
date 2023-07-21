@@ -414,8 +414,6 @@ header {
 #modal-movements,
 #modal-time {
     color: var(--darkblue);
-    border: 2px solid var(--blue);
-    padding: 5px;
 }
 
 /* Media queries */
@@ -489,11 +487,6 @@ header {
 
         .modal-body h2 {
             font-size: 16pt;
-        }
-
-        #modal-movements,
-        #modal-time {
-            padding: 0;
         }
     }
 
