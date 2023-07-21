@@ -101,6 +101,16 @@ The color palette was created using the [Coolors](https://coolors.co/) website.
 
 Google Fonts was used for the following fonts: 
 
+- [Luckiest Guy](https://fonts.google.com/specimen/Luckiest+Guy?preview.text=P%C3%B3kemon%20Card%20Catcher&preview.text_type=custom&query=Luckiest+Guy) for Header:
+  -  Cursive font
+  -  Reminiscent of the Pokémon logo, evoking a sense of nostalgia and familiarity.
+
+  
+
+- [Fredoka](https://fonts.google.com/specimen/Fredoka?preview.text=P%C3%B3kemon%20Card%20Catcher&preview.text_type=custom&query=fredoka) for Body:
+  -  Sans-serif font
+  -  Clean and elegant design, that provides pleasant reading experience
+  -  Friendly and rounded letterforms complement the playful nature of the game, creating a visually appealing and enjoyable experience for the players
 
 
 ### Imagery
