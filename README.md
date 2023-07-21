@@ -54,7 +54,7 @@ Embark on this delightful Pokémon memory adventure and see if you have what it 
   * [Acknowledgments](#acknowledgments)
 
 - - -
-![Pókemon Card Catcher Banner]()
+![Pókemon Card Catcher Banner](documentation/banner.png)
 
 ## User Experience (UX)
 
@@ -62,12 +62,18 @@ Embark on this delightful Pokémon memory adventure and see if you have what it 
 
 #### First Time Visitor Goals
 
+* I want to take part in an online memory card game. I want to be able to play at any time, anywhere.
+* I want the site to be responsive to my device.
+* I want the website to be easy to use, and it should allow me to explore, discover, and enjoy playing the "Pókemon Card Catcher" game without any difficulty.
 
 #### Returning Visitor Goals
 
+* I want to have the option to select a level of difficulty that suits me best, depending on my experience from the first time I visit the site.
 
 #### Frequent Visitor Goals
 
+* I wish to be able to adjust the difficulty level to make the game more enjoyable.
+* I want to have the opportunity to view all the Pokémon images.
 
 - - -
 
