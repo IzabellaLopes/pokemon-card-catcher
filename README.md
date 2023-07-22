@@ -25,6 +25,7 @@ Embark on this delightful Pokémon memory adventure and see if you have what it 
   - [Color Scheme](#color-scheme)
   - [Typography](#typography)
   - [Imagery](#imagery)
+  - [Wireframes](#wireframes)
   - [Features](#features)
     - [The Home Page](#the-home-page)
     - [The Game Page](#the-game-page)
@@ -123,6 +124,15 @@ Google Fonts was used for the following fonts:
 
 The images were sourced from free downloads from PngEgg, PngWing, Wallpaper Safari, Imgur, Flaticon, as well as personally handcrafted by my talented children, Thiago Carvalho, 7 years old, and Júlia Carvalho, 6 years old. To honor the sources of these remarkable images, proper credits have been given in the dedicated [credits](#Credits) section.
 
+### Wireframes
+
+I used Balsamiq to create the website's wireframe.
+
+![Home page](documentation/wireframes/home.png)
+![Level of difficulty](documentation/wireframes/difficulty.png)
+![Game page](documentation/wireframes/game.png)
+![Results](documentation/wireframes/results.png)
+
 ### Features
 
 The website consists of a home page, a game page, as well as 404 and 500 error pages.
@@ -193,6 +203,8 @@ HTML, CSS, Javascript
 
 ### Frameworks, Libraries & Programs Used
 
+* [Balsamiq](https://balsamiq.com/) - To create wireframes.
+
 - [Codeanywhere](https://app.codeanywhere.com/) - IDE used to create the site.
 
 - [Github](https://github.com/) - To save and store the files for the website.
@@ -204,6 +216,8 @@ HTML, CSS, Javascript
 - [TinyPNG](https://tinypng.com/) To compress images
 
 - [Safeimagekit](https://safeimagekit.com/) To resize images and convert them to the webp format.
+
+- [Ezgif](https://ezgif.com/video-to-gif/) To convert video to gif to include in the Readme.md.
 
 - [Font Awesome](https://fontawesome.com/) - For the iconography on the website.
 
