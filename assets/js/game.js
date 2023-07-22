@@ -26,9 +26,10 @@ const characters = [
 ];
 
 // Create a card
-function createMemoryCard(character) {
+function createMemoryCard(character, index) {
     const card = document.createElement('div');
     card.classList.add('memory-card');
+    card.setAttribute('data-card-index', index); // Add data attribute to identify the card
 
     const frontFace = document.createElement('div');
     frontFace.classList.add('face', 'front');
@@ -77,8 +78,8 @@ function createMemoryGame() {
     const shuffledCharacters = shuffleArray(duplicatedCharacters);
 
     // Create memory cards based on the selected characters
-    shuffledCharacters.forEach(character => {
-        const card = createMemoryCard(character);
+    shuffledCharacters.forEach((character, index) => {
+        const card = createMemoryCard(character, index);
         memoryGame.appendChild(card);
     });
 
@@ -98,8 +99,7 @@ let matchedCards = [];
 
 // Reveal the card when clicked
 function revealCard(event) {
-    const card = event.target.parentElement;
-
+    const card = event.target.closest('.memory-card'); // Use closest() to find the closest parent with class 'memory-card'
 
     console.log("^clicked, ====>", card);
 
