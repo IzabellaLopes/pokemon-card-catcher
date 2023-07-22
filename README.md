@@ -125,9 +125,45 @@ The images were sourced from free downloads from PngEgg, PngWing, Wallpaper Safa
 
 ### Features
 
+The website consists of a home page, a game page, as well as 404 and 500 error pages.
+
 #### Existing Features
 
+Every page on the website is responsive and includes:
+
+- A favicon displayed in the browser tab.
+
+![favicon](documentation/favicon-image.png)
+
+- A header, featuring the Pokémon logo and the title 'Card Catcher,' which is situated at the top of every page.
+
+![Pókemon Card Catcher Banner](documentation/banner.png)
+
 #### The Home page
+
+The home page features the following elements:
+
+- A smooth background image, with colors that complement the chosen color palette for the game, reminiscent of scenes from the Pokémon game.
+
+- An area for the player to enter their name and personalize the game.
+
+- A play button with the text "Catch 'em all!", which is initially disabled. Once the player enters more than 3 characters, the "Catch 'em all!" button becomes active, changes color, displaying a background filled with Pokémon characters, and adds a zoom animation.
+
+- A "How to Play" section, displaying the game's rules.
+
+![Home page](documentation/features/home.gif)
+
+Level of difficulty modal:
+
+- After the player enters their name and clicks on the "Catch 'em all!" button, they will be redirected to a modal with the title "Choose your level of difficulty": Easy, Medium, or Hard.
+
+- Progressive pokéball icons have been added in front of the text to grab the player's attention.
+
+- When hovering over them, there is a zoom animation and color change effect.
+
+- Additionally, there is a FontAwesome "x" icon in the top right corner, which allows the player to exit the modal and return to the initial screen.
+
+![Level of difficulty modal](documentation/features/difficulty.gif)
 
 #### The Game page
 
