@@ -135,7 +135,7 @@ I used Balsamiq to create the website's wireframe.
 
 ### Features
 
-The website consists of a home page, a game page, as well as 404 and 500 error pages.
+The website consists of a home page, a game page, as well as 404 error pages.
 
 #### Existing Features
 
@@ -203,31 +203,31 @@ HTML, CSS, Javascript
 
 ### Frameworks, Libraries & Programs Used
 
-* [Balsamiq](https://balsamiq.com/) - To create wireframes.
+- [Balsamiq](https://balsamiq.com/) - To create wireframes.
 
-- [Codeanywhere](https://app.codeanywhere.com/) - IDE used to create the site.
+* [Codeanywhere](https://app.codeanywhere.com/) - IDE used to create the site.
 
-- [Github](https://github.com/) - To save and store the files for the website.
+* [Github](https://github.com/) - To save and store the files for the website.
 
-- [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+* [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 
-- [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, resolve issues related to responsiveness and styling.
+* [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, resolve issues related to responsiveness and styling.
 
-- [TinyPNG](https://tinypng.com/) To compress images
+* [TinyPNG](https://tinypng.com/) To compress images
 
-- [Safeimagekit](https://safeimagekit.com/) To resize images and convert them to the webp format.
+* [Safeimagekit](https://safeimagekit.com/) To resize images and convert them to the webp format.
 
-- [Ezgif](https://ezgif.com/video-to-gif/) To convert video to gif to include in the Readme.md.
+* [Ezgif](https://ezgif.com/video-to-gif/) To convert video to gif to include in the Readme.md.
 
-- [Font Awesome](https://fontawesome.com/) - For the iconography on the website.
+* [Font Awesome](https://fontawesome.com/) - For the iconography on the website.
 
-- [Favicon.io](https://favicon.io/) To create favicon.
+* [Favicon.io](https://favicon.io/) To create favicon.
 
-- [Am I Responsive?](http://ami.responsivedesign.is/) To display the website image across various devices.
+* [Am I Responsive?](http://ami.responsivedesign.is/) To display the website image across various devices.
 
-- [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - A Google Chrome extension that allows you to view your site as people with accessibility needs would see it.
+* [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - A Google Chrome extension that allows you to view your site as people with accessibility needs would see it.
 
-- [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
+* [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
 
 ---
 
