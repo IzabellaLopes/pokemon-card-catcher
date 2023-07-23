@@ -41,10 +41,3 @@ To guarantee responsiveness across various screen sizes and devices, I meticulou
   - style.css ![css](documentation/w3/w3-css.png)
 
 ---
-
-### JavaScript Validator
-
-[jshint](https://jshint.com/) was used to validate the JavaScript.
-
-- ![script.js](testing/jshint/jshint-javascript.png) - Passed.
-- [game.js](testing/jshint/jshint-game.png) - Passed with one warning. Async functions are only available in ES8. It also stated that there are 4 unused variables, however these are being used.
