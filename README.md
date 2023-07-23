@@ -132,7 +132,7 @@ I used Balsamiq to create the website's wireframe.
 
 ### Features
 
-The website consists of a home page, a game page, as well as 404 error pages.
+The website consists of a home page, a game page, as well as 404 error pages. 
 
 #### Existing Features
 
@@ -242,31 +242,31 @@ HTML, CSS, Javascript
 
 ### Frameworks, Libraries & Programs Used
 
-* [Balsamiq](https://balsamiq.com/) - To create wireframes.
+- [Balsamiq](https://balsamiq.com/) - To create wireframes.
 
-* [Codeanywhere](https://app.codeanywhere.com/) - IDE used to create the site.
+- [Codeanywhere](https://app.codeanywhere.com/) - IDE used to create the site.
 
-* [Github](https://github.com/) - To save and store the files for the website.
+- [Github](https://github.com/) - To save and store the files for the website.
 
-* [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+- [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 
-* [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, resolve issues related to responsiveness and styling.
+- [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, resolve issues related to responsiveness and styling.
 
-* [TinyPNG](https://tinypng.com/) To compress images
+- [TinyPNG](https://tinypng.com/) To compress images
 
-* [Safeimagekit](https://safeimagekit.com/) To resize images and convert them to the webp format.
+- [Safeimagekit](https://safeimagekit.com/) To resize images and convert them to the webp format.
 
-* [Ezgif](https://ezgif.com/video-to-gif/) To convert video to gif to include in the Readme.md.
+- [Ezgif](https://ezgif.com/video-to-gif/) To convert video to gif to include in the Readme.md.
 
-* [Font Awesome](https://fontawesome.com/) - For the iconography on the website.
+- [Font Awesome](https://fontawesome.com/) - For the iconography on the website.
 
-* [Favicon.io](https://favicon.io/) To create favicon.
+- [Favicon.io](https://favicon.io/) To create favicon.
 
-* [Am I Responsive?](http://ami.responsivedesign.is/) To display the website image across various devices.
+- [Am I Responsive?](http://ami.responsivedesign.is/) To display the website image across various devices.
 
-* [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - A Google Chrome extension that allows you to view your site as people with accessibility needs would see it.
+- [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - A Google Chrome extension that allows you to view your site as people with accessibility needs would see it.
 
-* [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
+- [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
 
 ---
 
@@ -275,6 +275,7 @@ HTML, CSS, Javascript
 ### Deployment
 
 The site was deployed using GitHub pages. The steps to deploy are as follows:
+
 1.  Login (or signup) to GitHub account.
 2.  Locate the repository named [IzabellaLopes/pokemon-card-catcher](https://github.com/IzabellaLopes/pokemon-card-catcher) for this project.
 3.  Click on the "Settings" link.
@@ -312,56 +313,39 @@ Please refer to [TESTING.md](TESTING.md) file for a comprehensive overview of al
 
 ### Solved Bugs
 
-| No | Bug | How I solved the issue |
-| :--- | :--- | :--- |
-| 1 | The original code allowed the player to reveal the same card twice by clicking on it multiple times. This behavior disrupted the game flow and could lead to unintended consequences, such as incorrect matches or inconsistencies in the game state. | Added a conditional check to prevent revealing a card if it is already revealed. This ensures that the player cannot click on the same card twice, avoiding any interference with the game's functionality and enhancing the user experience. |
-| 2 | The console.log with the message from the isGameOver function was being triggered before the game finished. | Modified the revealCard function to call isGameOver only after adding the "disabled-card" class to matched cards, ensuring the game is over before logging the message. |
-| 3 | The original code compared memory game cards using the backgroundImage property, leading to incorrect comparisons when styles changed. | I added a data-character attribute to the front face of each card and compared cards based on their data-character values, ensuring accurate matches. |
-| 4 | The bug was related to the finalTime variable displaying extra zeros in the results modal. For example, instead of showing "00:18" for a game time of 18 seconds, it was displaying "000:18". | I fixed this issue by using the padStart() method to format the minutes and seconds in the stopTimer() function. This ensured that the string representation of the minutes and seconds always had at least two characters, adding a leading zero if necessary. The correct format of "mm:ss" was achieved, and the finalTime was displayed correctly without extra zeros. |
-| 5 | The bug in the original code was related to the revealCard(event) function, where sometimes the "memory-game" div was revealed instead of the "memory-card" div when a card was clicked. This issue occurred because the event target's parent element was being retrieved using event.target.parentElement to identify the memory card. However, if the HTML structure changed in the future, the event target's parent might not be the actual memory card, leading to unintended behavior. | To solve this issue, I made the following changes: *In the createMemoryCard(character) function*: I added a data attribute (data-card-index) to each memory card element. This attribute stores a unique index value for each card. *In the createMemoryGame() function:* When calling createMemoryCard(character, index), I passed the index of the character to the createMemoryCard() function. This ensured that each memory card has a unique index value associated with it. *In the revealCard(event) function:* Instead of using event.target.parentElement to identify the memory card, I used event.target.closest('.memory-card'). The closest() method finds the closest ancestor that matches the specified selector (in this case, "memory-card"). This modification ensured that we correctly identified the clicked memory card, even if the HTML structure changed. By adding the data-card-index attribute and using the closest() method, I made the memory card identification more robust and independent of the HTML structure. These changes eliminated the occasional bug where the "memory-game" div was mistakenly revealed instead of the actual "memory-card" div, providing a more reliable and bug-free experience for players. |
+| No  | Bug                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | How I solved the issue                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| :-- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | The original code allowed the player to reveal the same card twice by clicking on it multiple times. This behavior disrupted the game flow and could lead to unintended consequences, such as incorrect matches or inconsistencies in the game state.                                                                                                                                                                                                                                         | Added a conditional check to prevent revealing a card if it is already revealed. This ensures that the player cannot click on the same card twice, avoiding any interference with the game's functionality and enhancing the user experience.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 2   | The console.log with the message from the isGameOver function was being triggered before the game finished.                                                                                                                                                                                                                                                                                                                                                                                   | Modified the revealCard function to call isGameOver only after adding the "disabled-card" class to matched cards, ensuring the game is over before logging the message.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| 3   | The original code compared memory game cards using the backgroundImage property, leading to incorrect comparisons when styles changed.                                                                                                                                                                                                                                                                                                                                                        | I added a data-character attribute to the front face of each card and compared cards based on their data-character values, ensuring accurate matches.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| 4   | The bug was related to the finalTime variable displaying extra zeros in the results modal. For example, instead of showing "00:18" for a game time of 18 seconds, it was displaying "000:18".                                                                                                                                                                                                                                                                                                 | I fixed this issue by using the padStart() method to format the minutes and seconds in the stopTimer() function. This ensured that the string representation of the minutes and seconds always had at least two characters, adding a leading zero if necessary. The correct format of "mm:ss" was achieved, and the finalTime was displayed correctly without extra zeros.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| 5   | The bug in the original code was related to the revealCard(event) function, where sometimes the "memory-game" div was revealed instead of the "memory-card" div when a card was clicked. This issue occurred because the event target's parent element was being retrieved using event.target.parentElement to identify the memory card. However, if the HTML structure changed in the future, the event target's parent might not be the actual memory card, leading to unintended behavior. | To solve this issue, I made the following changes: _In the createMemoryCard(character) function_: I added a data attribute (data-card-index) to each memory card element. This attribute stores a unique index value for each card. _In the createMemoryGame() function:_ When calling createMemoryCard(character, index), I passed the index of the character to the createMemoryCard() function. This ensured that each memory card has a unique index value associated with it. _In the revealCard(event) function:_ Instead of using event.target.parentElement to identify the memory card, I used event.target.closest('.memory-card'). The closest() method finds the closest ancestor that matches the specified selector (in this case, "memory-card"). This modification ensured that we correctly identified the clicked memory card, even if the HTML structure changed. By adding the data-card-index attribute and using the closest() method, I made the memory card identification more robust and independent of the HTML structure. These changes eliminated the occasional bug where the "memory-game" div was mistakenly revealed instead of the actual "memory-card" div, providing a more reliable and bug-free experience for players. |
 
-- - - 
+---
 
 ### Known Bugs
 
-### Validator Testing
+This is the video of bug number 5 described above in the solved bugs section. This bug kept me up for several days, and after making the changes described in the code, so far, such an occasional bug has not occurred again, even after numerous manual tests conducted by me, family, and friends. However, I will keep it documented for potential future bugs.
 
-- HTML: No errors were returned when passing through the official W3C validator.
+![bug5](documentation/bug/bug5.gif)
 
-  -
-
-- CSS: No errors were found when passing through the official Jigsaw validator.
-  - [style.css](documentation/testing/w3c/w3c-css.png)
-
-### Lighthouse
-
-I utilized Lighthouse, a tool available in the Chrome Developer Tools, to assess the performance, accessibility, best practices, and SEO aspects of the website.
-
-#### Home page
-
-#### Game page
-
-### Full Testing
-
-To make sure my website works properly, I tested it on different web browsers like Google Chrome and Microsoft Edge, and also on different devices such as a Dell Inspiron 15-inch laptop and a Samsung A52S smartphone.
-
-Additionally, I inspected each page using Google Chrome Developer Tools to ensure that they appeared correctly and were responsive on various screen sizes.
-
----
+- - -
 
 ## Credits
 
 ### Code Used
 
-- [LoveRunning source code from Code Institute](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode)
 - [README.md template from Code Institute](https://github.com/Code-Institute-Solutions/readme-template)
 - [README.md examples from kera-cudmore](https://github.com/kera-cudmore/readme-examples/tree/main)
 
 ### Content
 
-- Content for the website was written by Iza
-  bella Lopes.
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+- Content for the website was written by Izabella Lopes.
+- The icons "X" for closing the modal, move counter, and timer were obtained from [Font Awesome](https://fontawesome.com/).
+- The text-shadow to CSS were taken from [Paola Wilm Lobato - CSS text-shadow](http://pwdesignecriacoes.com.br/css-borda-e-texto/).
+- The tutorial on creating a modal for different levels of difficulty were taken from [Florin Pop - Create a Modal (Popup) with HTML/CSS and JavaScript](https://www.youtube.com/watch?v=XH5OW46yO8I).
+- Memory game tutorial from [freeCodeCamp.org - Memory Card Game - JavaScript Tutorial](https://www.youtube.com/watch?v=ZniVgo8U7ek) and [Manual do Dev - Jogo da memoria com JavaScript | Parte 1: Login | Parte 2: Game | Parte 3: Final | Criando jogo com JavaScript, HTML e CSS](https://www.youtube.com/watch?v=NV88N1r2Qkg&list=PLdtmpu_1ITQJJoH-5D0sU2Q2N0wwgPGCi&index=1).
+- Tutorial to create a stopwatch in Javascript were taken from [GSPTeck - Create a Stopwatch in JavaScript](https://dev.to/gspteck/create-a-stopwatch-in-javascript-2mak).
 
 ### Media
 
@@ -406,7 +390,8 @@ Frontface of memory cards:
 
 ### Acknowledgments
 
-I would like to acknowledge the following individuals who helped me along the way in completing my second project:
+I would like to express my gratitude to the following individuals who played significant roles in the successful completion of my second project:
 
-- My family, for their strong support during my transition and development of a new career. Their names are featured in the testimonials and our team section of the CheckUp Dublin Center webpage as a way to honor them and show my appreciation.
-- Jubril Akolade, my Code Institute Mentor, for providing valuable advice.
+- My family, for their unwavering support and understanding during this period of intensive study. A special thanks to my children, Thiago Carvalho and Júlia Carvalho, who actively assisted me in this project. They suggested the game idea they wanted to play and helped me design the beloved Pokémon-themed characters.
+
+- Jubril Akolade, my mentor from the Code Institute.
