@@ -32,12 +32,50 @@ To guarantee responsiveness across various screen sizes and devices, I meticulou
 
 - HTML: No errors were returned when passing through the official [W3C validator](https://validator.w3.org/).
 
-  - Home page ![Home page](documentation/w3/w3-index.png)
-  - Game page ![Game page](documentation/w3/w3-game.png)
-  - 404 Page ![404 page](documentation/w3/w3-404.png)
+  - Home page ![Home page](testing/w3/w3-index.png)
+  - Game page ![Game page](testing/w3/w3-game.png)
+  - 404 Page ![404 page](testing/w3/w3-404.png)
 
 - CSS: No errors were found when passing through the official Jigsaw validator.
 
-  - style.css ![css](documentation/w3/w3-css.png)
+  - style.css ![css](testing/w3/w3-css.png)
+
+---
+
+### JavaScript Validator
+
+[jshint](https://jshint.com/) was used to validate the JavaScript.
+
+- script.js ![script.js](testing/jshint/jshint-script.png)
+- game.js ![game.js](testing/jshint/jshint-game.png)
+
+---
+
+### Lighthouse
+
+I utilized Lighthouse, a tool available in the Chrome Developer Tools, to assess the performance, accessibility, best practices, and SEO aspects of the website.
+
+- Home page
+  - Desktop ![home-desktop](testing/lighthouse/home-desktop.png)
+  - Mobile ![home-mobile](testing/lighthouse/home-mobile.png)
+- Game page
+
+  - Easy level
+
+    - Desktop ![easy-desktop](testing/lighthouse/game-easy-desktop.png)
+    - Mobile ![easy-mobile](testing/lighthouse/game-easy-mobile.png)
+
+  - Medium level
+
+    - Desktop ![medium-desktop](testing/lighthouse/game-medium-desktop.png)
+    - Mobile ![medium-mobile](testing/lighthouse/game-medium-mobile.png)
+
+  - Hard level
+    - Desktop ![hard-desktop](testing/lighthouse/game-hard-desktop.png)
+    - Mobile ![hard-mobile](testing/lighthouse/game-hard-mobile.png)
+
+- 404 page
+  - Desktop ![404-desktop](testing/lighthouse/404-desktop.png)
+  - Mobile ![404-mobile](testing/lighthouse/404-mobile.png)
 
 ---
