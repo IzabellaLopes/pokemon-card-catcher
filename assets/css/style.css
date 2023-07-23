@@ -430,11 +430,12 @@ header {
 
 .error p {
     color: var(--darkblue);
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
 .error a {
     text-decoration: none;
+    color: var(--blue);
 }
 
 /* Media queries */

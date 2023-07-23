@@ -177,11 +177,52 @@ Level of difficulty modal:
 
 #### The Game page
 
+The game page features a container that displays the player's name, the number of moves, and a game timer that starts after the first move. The memory game is formatted depending on the player's chosen level (easy, medium, or hard) and the device they are using to access the game (max-width: 600px) for improved accessibility.
+
+- Easy Level:
+  - 4 columns and 2 rows, both above and below 600px wide screen.
+
+![Easy](documentation/features/easy.png)
+
+- Medium Level:
+  - Small devices: 4 columns and 4 rows.
+  - Above 600px: 6 columns and 3 rows.
+
+![Medium](documentation/features/medium.png)
+
+- Hard Level:
+  - Small devices: 5 columns and 6 rows.
+  - Above 600px: 8 columns and 4 rows.
+
+![Hard](documentation/features/hard.png)
+
+The background of the memory cards represents the symbol of the Pokéball, one of the most iconic items from the Pokémon theme. The front face of the cards was partially designed by my children, who are not only big Pokémon fans but also my biggest supporters, eager to participate in this project. Additionally, they selected other images that were included in the hard level.
+
+Finally, on the game page, there is a "Quit" button below the grid, which changes color when hovered over and takes the player back to the initial page when clicked.
+
+Results modal:
+
+- As soon as the player matches all the pairs of cards, they will be redirected to a results modal saying, "Congratulations, (player's name)! You are a good card catcher! Your number of moves was (number of moves), and your time was (timer)!"
+
+- There is also a "Catch 'em all again" button available to play again, which takes them back to the home page, and a close button (X) in the top right corner that simply closes the modal and returns to the game page.
+
+![Results Modal](documentation/features/results.png)
+
 #### The 404 Error Page
 
-#### The 500 Error Page
+The 404 error page exhibits a message of apology, informing the user about an error that occurred while attempting to navigate to their intended page. A button is conveniently placed at the bottom of the page, allowing the user to be redirected to the home page effortlessly.
+
+![Error page image](documentation/features/error.png)
 
 #### Future Implementations
+
+For future implementations in the Pokémon Card Catcher, I would like to create the following features:
+
+- Scoring System and Highscores: Implement a scoring system within the game and create a highscores leaderboard to track and display the top-performing players.
+
+- Timer Options: Provide players with the option to choose between two different types of timers. The first option would be the original timer with progressive counting, allowing players to play without time limits. The second option would be a countdown timer, where the game concludes when the time runs out.
+
+- Multiplayer Mode: Introduce a multiplayer mode that allows two players to participate simultaneously. Players can compete against each other to see who can match more pairs and achieve a higher score.
 
 ### Accessibility
 
@@ -189,6 +230,7 @@ I have been attentive to make the website as accessible-friendly as possible thr
 
 - Utilizing semantic HTML to provide meaningful structure and enhance accessibility.
 - Incorporating descriptive alt attributes for images on the site to provide alternative text for screen readers.
+- Implement a hover state for all buttons on the website to provide users with a clear visual indication when they are hovering over a button.
 - Ensuring an adequate color contrast across the site to improve readability for users with visual impairments. I employed the contrast checker provided by [WebAIM](https://webaim.org/resources/contrastchecker/) to validate the contrast ratio between the selected foreground color and background color.
 
 By implementing these considerations, I have strived to enhance the overall accessibility of the website.
@@ -237,13 +279,13 @@ HTML, CSS, Javascript
 
 - The site was deployed using GitHub pages. The steps to deploy are as follows:
   1.  Login (or signup) to GitHub account.
-  2.  Locate the repository named "" for this project.
+  2.  Locate the repository named [IzabellaLopes/pokemon-card-catcher](https://github.com/IzabellaLopes/pokemon-card-catcher) for this project.
   3.  Click on the "Settings" link.
   4.  In the left-hand side navigation bar, click on "Pages".
   5.  In the "Source" section, choose "main" from the branch selection dropdown menu. Select "Root" from the folder selection dropdown menu.
   6.  Click on "Save." Your GitHub Pages site is now deployed and can be accessed at the displayed URL.
 
-The live link can be found here - []()
+The live link can be found here - [Pókemon Card Catcher](https://izabellalopes.github.io/pokemon-card-catcher/)
 
 ### Local Development
 
@@ -252,7 +294,7 @@ The live link can be found here - []()
 To fork the repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, []()
+2. Go to the repository for this project, [IzabellaLopes/pokemon-card-catcher](https://github.com/IzabellaLopes/pokemon-card-catcher).
 3. Click the Fork button in the top right corner.
 
 #### How to Clone
@@ -260,7 +302,7 @@ To fork the repository:
 To clone the repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, []()
+2. Go to the repository for this project, [IzabellaLopes/pokemon-card-catcher](https://github.com/IzabellaLopes/pokemon-card-catcher)
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
