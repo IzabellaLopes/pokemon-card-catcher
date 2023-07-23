@@ -435,7 +435,6 @@ header {
 
 .error a {
     text-decoration: none;
-    color: var(--blue);
 }
 
 /* Media queries */

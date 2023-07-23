@@ -311,7 +311,7 @@ To clone the repository:
 
 ## Testing
 
-Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
+Please refer to [TESTING.md](TESTING.md) file for a comprehensive overview of all conducted testing procedures.
 
 ### Solved Bugs
 
