@@ -30,4 +30,21 @@ To guarantee responsiveness across various screen sizes and devices, I meticulou
 
 ### W3C Validator
 
-The HTML of all pages on the website underwent validation using [W3C](https://validator.w3.org/).
+- HTML: No errors were returned when passing through the official [W3C validator](https://validator.w3.org/).
+
+  - Home page ![Home page](documentation/w3/w3-index.png)
+  - Game page ![Game page](documentation/w3/w3-game.png)
+  - 404 Page ![404 page](documentation/w3/w3-404.png)
+
+- CSS: No errors were found when passing through the official Jigsaw validator.
+
+  - style.css ![css](documentation/w3/w3-css.png)
+
+---
+
+### JavaScript Validator
+
+[jshint](https://jshint.com/) was used to validate the JavaScript.
+
+- ![script.js](testing/jshint/jshint-javascript.png) - Passed.
+- [game.js](testing/jshint/jshint-game.png) - Passed with one warning. Async functions are only available in ES8. It also stated that there are 4 unused variables, however these are being used.
