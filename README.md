@@ -48,9 +48,6 @@ Embark on this delightful Pokémon memory adventure and see if you have what it 
 - [Testing](#testing)
   - [Solved Bugs](#solved-bugs)
   - [Known Bugs](#known-bugs)
-  - [Validator Testing](#validator-testing)
-  - [Lighthouse](#lighthouse)
-  - [Full Testing](#full-testing)
 - [Credits](#credits)
   - [Code Used](#code-used)
   - [Content](#content)
@@ -245,7 +242,7 @@ HTML, CSS, Javascript
 
 ### Frameworks, Libraries & Programs Used
 
-- [Balsamiq](https://balsamiq.com/) - To create wireframes.
+* [Balsamiq](https://balsamiq.com/) - To create wireframes.
 
 * [Codeanywhere](https://app.codeanywhere.com/) - IDE used to create the site.
 
@@ -277,13 +274,13 @@ HTML, CSS, Javascript
 
 ### Deployment
 
-- The site was deployed using GitHub pages. The steps to deploy are as follows:
-  1.  Login (or signup) to GitHub account.
-  2.  Locate the repository named [IzabellaLopes/pokemon-card-catcher](https://github.com/IzabellaLopes/pokemon-card-catcher) for this project.
-  3.  Click on the "Settings" link.
-  4.  In the left-hand side navigation bar, click on "Pages".
-  5.  In the "Source" section, choose "main" from the branch selection dropdown menu. Select "Root" from the folder selection dropdown menu.
-  6.  Click on "Save." Your GitHub Pages site is now deployed and can be accessed at the displayed URL.
+The site was deployed using GitHub pages. The steps to deploy are as follows:
+1.  Login (or signup) to GitHub account.
+2.  Locate the repository named [IzabellaLopes/pokemon-card-catcher](https://github.com/IzabellaLopes/pokemon-card-catcher) for this project.
+3.  Click on the "Settings" link.
+4.  In the left-hand side navigation bar, click on "Pages".
+5.  In the "Source" section, choose "main" from the branch selection dropdown menu. Select "Root" from the folder selection dropdown menu.
+6.  Click on "Save." Your GitHub Pages site is now deployed and can be accessed at the displayed URL.
 
 The live link can be found here - [Pókemon Card Catcher](https://izabellalopes.github.io/pokemon-card-catcher/)
 
@@ -293,7 +290,7 @@ The live link can be found here - [Pókemon Card Catcher](https://izabellalopes.
 
 To fork the repository:
 
-1. Log in (or sign up) to Github.
+1. Login (or signup) to GitHub account.
 2. Go to the repository for this project, [IzabellaLopes/pokemon-card-catcher](https://github.com/IzabellaLopes/pokemon-card-catcher).
 3. Click the Fork button in the top right corner.
 
@@ -301,7 +298,7 @@ To fork the repository:
 
 To clone the repository:
 
-1. Log in (or sign up) to GitHub.
+1. Login (or signup) to GitHub account.
 2. Go to the repository for this project, [IzabellaLopes/pokemon-card-catcher](https://github.com/IzabellaLopes/pokemon-card-catcher)
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
@@ -315,9 +312,15 @@ Please refer to [TESTING.md](TESTING.md) file for a comprehensive overview of al
 
 ### Solved Bugs
 
-| Nº  | Bug | How I solved the issue |
-| :-- | :-- | :--------------------- |
-| 1   |
+| No | Bug | How I solved the issue |
+| :--- | :--- | :--- |
+| 1 | The original code allowed the player to reveal the same card twice by clicking on it multiple times. This behavior disrupted the game flow and could lead to unintended consequences, such as incorrect matches or inconsistencies in the game state. | Added a conditional check to prevent revealing a card if it is already revealed. This ensures that the player cannot click on the same card twice, avoiding any interference with the game's functionality and enhancing the user experience. |
+| 2 | The console.log with the message from the isGameOver function was being triggered before the game finished. | Modified the revealCard function to call isGameOver only after adding the "disabled-card" class to matched cards, ensuring the game is over before logging the message. |
+| 3 | The original code compared memory game cards using the backgroundImage property, leading to incorrect comparisons when styles changed. | I added a data-character attribute to the front face of each card and compared cards based on their data-character values, ensuring accurate matches. |
+| 4 | The bug was related to the finalTime variable displaying extra zeros in the results modal. For example, instead of showing "00:18" for a game time of 18 seconds, it was displaying "000:18". | I fixed this issue by using the padStart() method to format the minutes and seconds in the stopTimer() function. This ensured that the string representation of the minutes and seconds always had at least two characters, adding a leading zero if necessary. The correct format of "mm:ss" was achieved, and the finalTime was displayed correctly without extra zeros. |
+| 5 | The bug in the original code was related to the revealCard(event) function, where sometimes the "memory-game" div was revealed instead of the "memory-card" div when a card was clicked. This issue occurred because the event target's parent element was being retrieved using event.target.parentElement to identify the memory card. However, if the HTML structure changed in the future, the event target's parent might not be the actual memory card, leading to unintended behavior. | To solve this issue, I made the following changes: *In the createMemoryCard(character) function*: I added a data attribute (data-card-index) to each memory card element. This attribute stores a unique index value for each card. *In the createMemoryGame() function:* When calling createMemoryCard(character, index), I passed the index of the character to the createMemoryCard() function. This ensured that each memory card has a unique index value associated with it. *In the revealCard(event) function:* Instead of using event.target.parentElement to identify the memory card, I used event.target.closest('.memory-card'). The closest() method finds the closest ancestor that matches the specified selector (in this case, "memory-card"). This modification ensured that we correctly identified the clicked memory card, even if the HTML structure changed. By adding the data-card-index attribute and using the closest() method, I made the memory card identification more robust and independent of the HTML structure. These changes eliminated the occasional bug where the "memory-game" div was mistakenly revealed instead of the actual "memory-card" div, providing a more reliable and bug-free experience for players. |
+
+- - - 
 
 ### Known Bugs
 
