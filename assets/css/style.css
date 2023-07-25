@@ -451,6 +451,9 @@ header {
 
 /* Medium devices (tablets, 768px wide and down) */
 @media screen and (max-width: 768px) {
+    #how-to-play {
+        font-size: 13pt;
+    }
 
     .game-container,
     .memory-game {
@@ -530,6 +533,10 @@ header {
         font-size: 20pt;
     }
 
+    #how-to-play {
+        font-size: 11pt;
+    }
+
     .player-info,
     .movements-info,
     .timer-info {
@@ -572,6 +579,10 @@ header {
     .modal-content {
         padding-bottom: 10px;
     }
+
+    #how-to-play {
+        font-size: 10pt;
+    }
 }
 
 /* Extra small devices (phones, 350px wide and down) */
@@ -589,7 +600,7 @@ header {
     }
 
     #how-to-play {
-        font-size: 10pt;
+        font-size: 9pt;
     }
 
     .modal-body h2 {
