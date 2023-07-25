@@ -80,8 +80,6 @@ header {
 
 /* Memory board - index.html and game.html */
 .memory-board {
-    display: flex;
-    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-image: url(../images/bg.webp);
