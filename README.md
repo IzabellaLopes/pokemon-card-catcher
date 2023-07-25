@@ -132,7 +132,7 @@ I used Balsamiq to create the website's wireframe.
 
 ### Features
 
-The website consists of a home page, a game page, as well as 404 error pages. 
+The website consists of a home page, a game page, as well as 404 error pages.
 
 #### Existing Features
 
@@ -329,7 +329,7 @@ This is the video of bug number 5 described above in the solved bugs section. Th
 
 ![bug5](documentation/bug/bug5.gif)
 
-- - -
+---
 
 ## Credits
 
