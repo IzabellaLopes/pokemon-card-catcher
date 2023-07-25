@@ -82,8 +82,8 @@ header {
 .memory-board {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    min-height: calc(100vh - var(--header-height) - 20px);
+    width: 100vw;
+    height: 100vh;
     background-image: url(../images/bg.webp);
     background-position: center;
     background-size: cover;
