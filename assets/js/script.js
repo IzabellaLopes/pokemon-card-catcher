@@ -7,10 +7,11 @@ input.addEventListener('input', validateInput);
 form.addEventListener('submit', handleSubmit);
 
 function validateInput({ target }) {
-    if (target.value.length > 2) {
-        button.removeAttribute('disabled');
-    } else {
+    if (target.value.length < 2 || target.value.trim() == "") {
         button.setAttribute('disabled', '');
+
+    } else {
+        button.removeAttribute('disabled');
     }
 }
 
