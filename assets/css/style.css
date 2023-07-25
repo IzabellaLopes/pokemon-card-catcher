@@ -81,12 +81,12 @@ header {
 /* Memory board - index.html and game.html */
 .memory-board {
     width: 100vw;
+    height: 100vh;
     min-height: calc(100vh - var(--header-height));
     background-image: url(../images/bg.webp);
     background-position: center;
     background-size: cover;
     align-items: center;
-    justify-content: center;
     padding: 20px 0 26px;
 }
 
