@@ -90,6 +90,11 @@ header {
     padding: 20px 0 26px;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Outer container */
 .outer-container {
     background-color: rgba(255, 255, 255, 0.5);
