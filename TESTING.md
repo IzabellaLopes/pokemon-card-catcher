@@ -1,8 +1,8 @@
 # Pokémon Card Catcher - Memory Card Game
 
-![Pókemon Card Catcher Website shown on a range of devices](documentation/responsive.png)
+![Pokémon Card Catcher Website shown on a range of devices](documentation/responsive.png)
 
-Visit the deployed site: [Pókemon Card Catcher](https://izabellalopes.github.io/pokemon-card-catcher/)
+Visit the deployed site: [Pokémon Card Catcher](https://izabellalopes.github.io/pokemon-card-catcher/)
 
 ---
 
@@ -88,9 +88,9 @@ I utilized Lighthouse, a tool available in the Chrome Developer Tools, to assess
 
 | Goals                                                                                                                                                        | How are they achieved?                                                                                                                                                                                                             |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| I want to take part in an online memory card game. I want to be able to play at any time, anywhere.                                                          | The website offers an engaging and interactive "Pókemon Card Catcher" game that allows users to test their memory skills by flipping and matching virtual cards. The site is available for use whenever is convenient to the user. |
+| I want to take part in an online memory card game. I want to be able to play at any time, anywhere.                                                          | The website offers an engaging and interactive "Pokémon Card Catcher" game that allows users to test their memory skills by flipping and matching virtual cards. The site is available for use whenever is convenient to the user. |
 | I want the site to be responsive to my device.                                                                                                               | The website's design is responsive, ensuring seamless gameplay and optimal user experience across various devices, including desktops, laptops, tablets, and smartphones.                                                          |
-| I want the website to be easy to use, and it should allow me to explore, discover, and enjoy playing the "Pókemon Card Catcher" game without any difficulty. | The website boasts an intuitive and user-friendly interface, making it easy for first-time visitors to navigate, explore, and enjoy the game without encountering any complications or confusion.                                  |
+| I want the website to be easy to use, and it should allow me to explore, discover, and enjoy playing the "Pokémon Card Catcher" game without any difficulty. | The website boasts an intuitive and user-friendly interface, making it easy for first-time visitors to navigate, explore, and enjoy the game without encountering any complications or confusion.                                  |
 
 `Returning Visitors`
 

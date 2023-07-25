@@ -1,8 +1,8 @@
 # Pokémon Card Catcher - Memory Card Game
 
-![Pókemon Card Catcher Website shown on a range of devices](documentation/responsive.png)
+![Pokémon Card Catcher Website shown on a range of devices](documentation/responsive.png)
 
-Visit the deployed site: [Pókemon Card Catcher](https://izabellalopes.github.io/pokemon-card-catcher/)
+Visit the deployed site: [Pokémon Card Catcher](https://izabellalopes.github.io/pokemon-card-catcher/)
 
 Welcome to Pokémon Card Catcher, the ultimate memory card game that will put your memory skills to the test! Whether you're a seasoned Pokémon fan or just looking for a fun and challenging game, this is the perfect choice for you.
 
@@ -56,7 +56,7 @@ Embark on this delightful Pokémon memory adventure and see if you have what it 
 
 ---
 
-![Pókemon Card Catcher Banner](documentation/banner.png)
+![Pokémon Card Catcher Banner](documentation/banner.png)
 
 ## User Experience (UX)
 
@@ -66,7 +66,7 @@ Embark on this delightful Pokémon memory adventure and see if you have what it 
 
 - I want to take part in an online memory card game. I want to be able to play at any time, anywhere.
 - I want the site to be responsive to my device.
-- I want the website to be easy to use, and it should allow me to explore, discover, and enjoy playing the "Pókemon Card Catcher" game without any difficulty.
+- I want the website to be easy to use, and it should allow me to explore, discover, and enjoy playing the "Pokémon Card Catcher" game without any difficulty.
 
 #### Returning Visitor Goals
 
@@ -95,7 +95,7 @@ The following color codes were selected:
 
 - Additionally, for icons and certain details, I selected shades of red, Firebrick (#B22222) and Dark Red (#64201C), reminiscent of the Pokéball, adding an element of excitement and intensity to the game.
 
-![Pókemon Card Catcher Palette](documentation/colorpalette.png)
+![Pokémon Card Catcher Palette](documentation/colorpalette.png)
 
 The color palette was created using the [Coolors](https://coolors.co/) website.
 
@@ -144,7 +144,7 @@ Every page on the website is responsive and includes:
 
 - A header, featuring the Pokémon logo and the title 'Card Catcher,' which is situated at the top of every page.
 
-![Pókemon Card Catcher Banner](documentation/banner.png)
+![Pokémon Card Catcher Banner](documentation/banner.png)
 
 #### The Home page
 
@@ -283,7 +283,7 @@ The site was deployed using GitHub pages. The steps to deploy are as follows:
 5.  In the "Source" section, choose "main" from the branch selection dropdown menu. Select "Root" from the folder selection dropdown menu.
 6.  Click on "Save." Your GitHub Pages site is now deployed and can be accessed at the displayed URL.
 
-The live link can be found here - [Pókemon Card Catcher](https://izabellalopes.github.io/pokemon-card-catcher/)
+The live link can be found here - [Pokémon Card Catcher](https://izabellalopes.github.io/pokemon-card-catcher/)
 
 ### Local Development
 
@@ -361,7 +361,7 @@ Play button:
 
 - [play-button](https://wallpapersafari.com/w/CGzOkf) - Credit to wallpaper safari.
 
-Pokemon icon:
+Pokémon icon:
 
 - [pokeball](https://www.flaticon.com/free-icon/pokeball_361998?term=pokemon&page=1&position=7&origin=tag&related_id=361998) - Credit to Nikita Golubev - Flaticon.
 
