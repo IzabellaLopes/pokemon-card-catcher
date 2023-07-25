@@ -440,6 +440,10 @@ header {
     text-decoration: none;
 }
 
+.margin {
+    margin: auto;
+}
+
 /* Media queries */
 
 /* Medium devices (landscape tablets, 850px wide and down) */
